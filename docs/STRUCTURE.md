@@ -50,6 +50,18 @@ Si necesitas cambiar algo visual, busca en qué archivo va:
 - `animation.js`  Utilidades de animación
 - `storage.js`  LocalStorage wrapper
 
+### src/assets/icons/
+
+Iconografía personalizada:
+
+- `design.svg`  Icono para Diseño Personalizado
+- `partnership.svg`  Icono para Asociación y Equipo
+- `guarantee.svg`  Icono para Garantía Estructural
+- `support.svg`  Icono para Seguimiento Permanente
+- `whatsapp.png`  Logo personalizado de WhatsApp (botón flotante)
+
+Los SVG heredan colores dinámicamente. Ver `src/assets/icons/README.md` para detalles.
+
 ### src/assets/images/
 
 ```
@@ -128,7 +140,9 @@ etc...
 |---|---|
 | Color naranja | `src/assets/css/variables.css` |
 | Textos | `public/index.html` (busca `<!-- REEMPLAZAR_` |
-| Imgenes | `src/assets/images/` |
+| Imgenes hero/proyectos | `src/assets/images/` |
+| Iconos de servicios | `src/assets/icons/` |
+| Logo WhatsApp flotante | `src/assets/icons/whatsapp.png` |
 | Proyectos | `src/assets/data/projects.json` |
 | Servicios | `src/assets/data/services.json` |
 | Número WhatsApp | `src/assets/js/modules/whatsapp-integration.js` |
