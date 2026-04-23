@@ -330,11 +330,10 @@ nav a[aria-current="page"]::after {
   }
 }
 
-.whatsapp-floating-btn svg,
-.whatsapp-floating-btn img {
+.whatsapp-floating-btn svg {
   width: 28px;
   height: 28px;
-  object-fit: contain;
+  fill: white;
 }
 
 @media (max-width: 768px) {
