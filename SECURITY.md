@@ -1,28 +1,28 @@
 # Seguridad
 
-## Si EncontrÃs una Vulnerabilidad
+## Si Encontrs una Vulnerabilidad
 
 No lo publiques en GitHub. Mandame email:
 
 security@arquitect.example.com
 
-Describe quÃ© encontraste, cÃ³mo reproducirlo. Te respondo en 48 horas.
+Describe qué encontraste, cómo reproducirlo. Te respondo en 48 horas.
 
-## QuÃ© EstÃ Protegido
+## Qué Est Protegido
 
 - Sin inputs de usuario = sin XSS
-- HTML estÃtico = sin inyecciÃ³n
+- HTML esttico = sin inyección
 - Sin backend = sin SQL injection
 
-## QuÃ© No EstÃ Protegido (Porque No Hay)
+## Qué No Est Protegido (Porque No Hay)
 
 - Base de datos (no la hay)
 - API backend (no la hay)
-- AutenticaciÃ³n (no la hay)
+- Autenticación (no la hay)
 
-Si agregÃs cualquiera de eso, tenÃ©s que pensar en seguridad.
+Si agregs cualquiera de eso, tenés que pensar en seguridad.
 
-## LibrerÃ­as Usadas
+## Librerías Usadas
 
 Todas vienen de CDN confiable y son mantenidas:
 - Swiper
@@ -30,18 +30,18 @@ Todas vienen de CDN confiable y son mantenidas:
 - VanillaTilt
 - Google Fonts
 
-Ninguna tiene vulnerabilidades conocidas crÃ­ticas.
+Ninguna tiene vulnerabilidades conocidas críticas.
 
-## Las Ãnicas Cosas Privadas
+## Las nicas Cosas Privadas
 
 ```
-.env (si lo usÃs)
+.env (si lo uss)
 ```
 
-Nunca commitees `.env` con datos reales. EstÃ en `.gitignore` asÃ­ que Git te avisa si lo olvidÃs.
+Nunca commitees `.env` con datos reales. Est en `.gitignore` así que Git te avisa si lo olvids.
 
 ## Resumen
 
-Es HTML + CSS + JS. No hay mucho que hackear. Si tu servidor estÃ bien configurado (HTTPS, headers de seguridad), estÃs seguro.
+Es HTML + CSS + JS. No hay mucho que hackear. Si tu servidor est bien configurado (HTTPS, headers de seguridad), ests seguro.
 
-Si no sabÃ©s si tu servidor estÃ bien, preguntale al soporte de hosting.
+Si no sabés si tu servidor est bien, preguntale al soporte de hosting.
