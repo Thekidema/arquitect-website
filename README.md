@@ -1,52 +1,19 @@
-# ARQUITECT - Sitio Web Profesional para Constructora
+# ARQUITECT Website
 
-> Sitio web moderno, responsive y listo para producción para constructoras especializadas en arquitectura contemporánea.
-
-![Version](https://img.shields.io/badge/version-2.0.0-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Status](https://img.shields.io/badge/status-Production%20Ready-brightgreen)
+Un sitio web ligero y funcional para constructoras. Nada de boludeces, solo lo que necesitas.
 
 ---
 
-## 🎯 Características
+## Qué tiene
 
-### 🎨 Diseño Premium
-- Tipografía profesional (Playfair Display + Outfit)
-- Sistema de colores centralizado y fácil de personalizar
-- Glassmorphism y efectos visuales sofisticados
-- Totalmente responsive (móvil, tablet, desktop)
-
-### 🚀 Performance
-- Tiempo de carga: < 2.5s (LCP)
-- Lazy loading en todas las imágenes
-- Sin frameworks pesados (Vanilla JavaScript)
-- Optimizado para Core Web Vitals
-
-### 📱 Interactividad
-- Carrusel hero con Swiper (3 slides)
-- Efecto 3D Tilt en tarjetas de proyectos (VanillaTilt)
-- Números animados en sección de servicios
-- Scroll reveals con stagger (AOS)
-
-### 🤝 Integración WhatsApp
-- Botón flotante con animación pulse
-- Mensajes preformateados para cotizaciones
-- Múltiples puntos de contacto
-- Número: +506 71668641 (Costa Rica)
-
-### 📊 Portfolio Categorizado
-- 6 proyectos organizados por tipo:
-  - Residencial (naranja)
-  - Comercial (azul)
-  - Rehabilitación (verde)
-- Badges de categoría visibles
-- Links a proyectos individuales
-
-### ♿ Accesibilidad
-- WCAG 2.1 AA compatible
-- Semantic HTML5
-- ARIA labels en elementos interactivos
-- Focus states visibles
+- **Carrusel Hero**: 3 slides con navegación manual y autoplay
+- **Sección de Servicios**: 4 tarjetas con números que cuentan cuando haces scroll
+- **Portfolio**: 6 proyectos categorizados (residencial, comercial, rehabilitación)
+- **Botón WhatsApp**: Flotante, siempre visible, conecta directo a chat
+- **Diseño responsive**: Se ve bien en móvil, tablet y desktop
+- **Rápido**: Sin frameworks pesados, solo vanilla JS
+- **Efectos visuales**: Algunos detalles bonitos sin que sea demasiado
+- **Fácil de cambiar**: Todo centralizado en config/colors.json y comments en HTML
 
 ---
 

@@ -1,325 +1,95 @@
-# Deployment Guide - ARQUITECT Web
+# Cómo Poner en Producción
 
-## 🚀 Opciones de Hosting
+## Las Opciones
 
-### 1. **Netlify** (Recomendado)
+### Opción 1: Netlify (Recomendado si usas Git)
 
-**Ventajas:**
-- Deploy automático desde Git
-- HTTPS gratis
-- Formularios sin backend
-- Edge functions (CDN)
-- Generador de sitemap automático
-
-**Pasos:**
-
-1. Crea cuenta en [netlify.com](https://netlify.com)
+1. Ve a netlify.com y crea cuenta
 2. Click "New site from Git"
 3. Conecta tu repositorio GitHub
-4. Configura:
-   - **Build command:** (dejar vacío, es sitio estático)
-   - **Publish directory:** `public`
-5. Click "Deploy site"
-
-**netlify.toml (opcional):**
-```toml
-[build]
-  command = "npm run build"
-  publish = "public"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Content-Type-Options = "nosniff"
-    X-Frame-Options = "SAMEORIGIN"
-    X-XSS-Protection = "1; mode=block"
-```
-
-**Dominio:**
-- Gratuito: `nombreproyecto.netlify.app`
-- Custom: Configura DNS en tu registrador
-
-### 2. **Vercel**
-
-**Ventajas:**
-- Muy rápido (Edge network)
-- Deploy automático
-- Analytics de performance
-- Préview de cambios
-
-**Pasos:**
-
-1. Crea cuenta en [vercel.com](https://vercel.com)
-2. Click "Import Project"
-3. Selecciona tu repositorio GitHub
-4. Vercel auto-detecta que es sitio estático
+4. En build settings:
+   - Build command: (dejar vacío)
+   - Publish directory: `public`
 5. Click "Deploy"
 
-**vercel.json (opcional):**
-```json
-{
-  "buildCommand": "npm run build",
-  "outputDirectory": "public",
-  "headers": [
-    {
-      "source": "/:path(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    }
-  ]
-}
-```
+Listo. Cada vez que haces push a main, se publica automáticamente.
 
-### 3. **GitHub Pages**
+Dominio: `tu-sitio.netlify.app` (gratis) o usa el tuyo si tienes.
 
-**Ventajas:**
-- Gratis
-- Integrado con GitHub
-- Simple para proyectos estáticos
+### Opción 2: Vercel
 
-**Pasos:**
+Similar a Netlify:
 
-1. Sube código a repositorio público en GitHub
-2. Crea rama `gh-pages`
-3. En Settings → Pages:
-   - Source: `gh-pages` branch
-   - Publish directory: `/ (root)`
-4. GitHub auto-deploy
+1. vercel.com
+2. "Import Project" desde GitHub
+3. Click deploy
 
-**Limitaciones:**
-- URL: `usuario.github.io/nombre-repo`
-- Actualizaciones más lentas
+Vercel es muy rápido porque usa edge functions. Si quieres lo mejor de lo mejor, va Vercel.
 
-### 4. **AWS S3 + CloudFront**
+### Opción 3: GitHub Pages (Más Lento)
 
-**Ventajas:**
-- Escalable empresarial
-- Muy barato (~$0.15/mes)
-- Control total
+1. Crea una rama `gh-pages`
+2. Sube el contenido de `public/`
+3. En settings → Pages → Source: gh-pages
 
-**Pasos:**
+Tu sitio estará en `usuario.github.io/arquitect-website`.
 
-1. Crea bucket S3
-2. Sube carpeta `public/` a bucket
-3. Configura como "website hosting"
-4. Crea CloudFront distribution para CDN
-5. Apunta dominio a CloudFront
+**Desventaja**: Actualizaciones son más lentas, no hay SSL gratis en dominio custom.
 
-**Costo estimado:** $0.10-0.50/mes
+### Opción 4: Tu Propio Servidor
 
-### 5. **Shared Hosting Tradicional** (cPanel, Plesk)
+Si tienes un VPS o hosting compartido:
 
-**Si tienes servidor con hosting compartido:**
+1. FTP a servidor
+2. Sube todo de `public/` a `public_html/`
+3. Activa HTTPS (Let's Encrypt es gratis)
+4. Listo
 
-1. FTP/SFTP a servidor
-2. Sube contenido de `public/` a `public_html/`
-3. Configura `index.html` como default document
-4. Activa HTTPS (Let's Encrypt)
+**Ventaja**: Control total. **Desventaja**: Tienes que mantenerlo.
 
----
+## Antes de Publicar
 
-## 🔐 Pre-Deployment Checklist
-
-### Contenido
-- [ ] Todos los textos personalizados (no "REEMPLAZAR")
-- [ ] Imágenes reales subidas a `src/assets/images/`
-- [ ] Colores actualizados en `config/colors.json`
-- [ ] Información de contacto correcta
-- [ ] Links funcionando (sin placeholders)
+- [ ] Todos los textos cambiados (sin "REEMPLAZAR")
+- [ ] Imágenes reales (no SVG de placeholder)
+- [ ] Colores actualizados (config/colors.json)
 - [ ] WhatsApp número correcto
+- [ ] Testeado en móvil + desktop
+- [ ] Sin errores en consola (F12)
 
-### Técnico
-- [ ] Sin errores en console (F12)
-- [ ] Lighthouse score > 90
-- [ ] Testeado en móvil + tablet + desktop
-- [ ] Testeado en Chrome, Firefox, Safari, Edge
-- [ ] Imágenes optimizadas
-- [ ] Favicon personalizado
-- [ ] Robots.txt y sitemap.xml generados
-
-### SEO
-- [ ] Meta title personalizado
-- [ ] Meta description (160 caracteres)
-- [ ] Open Graph image (og:image)
-- [ ] Structured data (schema.org)
-- [ ] Google Analytics configurado
-
-### Seguridad
-- [ ] HTTPS activado
-- [ ] Headers de seguridad configurados
-- [ ] No hay API keys en código
-- [ ] No hay datos sensibles en frontend
-
----
-
-## 📋 Pasos por Hosting
-
-### A. Netlify (Recomendado)
+## Con Netlify (Lo Más Fácil)
 
 ```bash
-# 1. Localmente, hacer commit
+# 1. Asegúrate de que todo esté en Git
 git add .
-git commit -m "Ready for production"
-git push origin main
+git commit -m "Cambios finales antes de publicar"
+git push
 
-# 2. En Netlify.com:
-# - Click "New site from Git"
-# - Selecciona repo
-# - Build command: (dejar vacío)
-# - Publish directory: public
-# - Deploy
-
-# 3. Configurar dominio:
-# - En Netlify: Domain settings
-# - Apunta DNS a Netlify nameservers
-# - O usar CNAME pointing
+# 2. En Netlify, conecta tu repo y listo
 ```
 
-### B. Vercel
+Netlify automáticamente detecta que es `public/` el entry point si tienes esa carpeta.
 
-```bash
-# 1. Instala Vercel CLI
-npm install -g vercel
+## Con Tu Propio Servidor
 
-# 2. Deploy
-vercel --prod
+Necesitas:
+1. Dominio (godaddy, namecheap, lo que sea)
+2. Hosting (cualquiera con FTP/SFTP)
+3. HTTPS (Let's Encrypt, es gratis si el hosting lo permite)
 
-# 3. Sigue prompts
-# - Project name
-# - Build command (dejar vacío)
-# - Output directory: public
-```
+Pasos:
+1. Conecta vía FTP a tu servidor
+2. Navega a `public_html` o similar
+3. Sube todo de `public/` ahí
+4. En la configuración del hosting, asegúrate que `index.html` es el archivo por defecto
+5. Configura HTTPS (o pide al soporte)
 
-### C. GitHub Pages
-
-```bash
-# 1. Crear rama gh-pages
-git checkout --orphan gh-pages
-
-# 2. Sube contenido public/
-cp -r public/* .
-git add .
-git commit -m "Deploy to GitHub Pages"
-
-# 3. Push a gh-pages
-git push origin gh-pages
-
-# 4. En GitHub Settings → Pages
-# - Source: gh-pages branch
-```
-
-### D. AWS S3
-
-```bash
-# 1. Instala AWS CLI
-pip install awscli
-
-# 2. Configura credenciales
-aws configure
-
-# 3. Sube contenido
-aws s3 sync public/ s3://tu-bucket-name --delete
-
-# 4. CloudFront invalidation
-aws cloudfront create-invalidation --distribution-id XXXXX --paths "/*"
-```
-
----
-
-## 🌍 Configurar Dominio
-
-### Opción 1: Registrador + Hosting
-
-**Ejemplo con GoDaddy:**
-
-1. Compra dominio en GoDaddy
-2. Deploy en Netlify
-3. En GoDaddy DNS:
-   - **CNAME:** `www` → `tu-site.netlify.app`
-   - **A Record:** `@` → IP de Netlify (obtén de Netlify)
-
-### Opción 2: Registrador + AWS S3 + Route53
-
-1. Compra dominio en Route53
-2. Configura record A → CloudFront distribution
-3. Auto-sincronizado
-
-### Opción 3: Dominio Gratuito
-
-- `.tk`, `.ml`, `.ga` en Freenom
-- Gratis durante 1 año
-- Auto-renew
-
----
-
-## 🔒 Seguridad Post-Deployment
-
-### HTTPS
-
-**Netlify, Vercel, GitHub Pages:** Automático ✅
-
-**Shared Hosting:**
-```apache
-# En .htaccess - Redirect HTTP a HTTPS
-RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-```
-
-### Headers de Seguridad
-
-**En netlify.toml:**
-```toml
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
-    X-Content-Type-Options = "nosniff"
-    X-Frame-Options = "DENY"
-    X-XSS-Protection = "1; mode=block"
-    Referrer-Policy = "no-referrer-when-downgrade"
-```
-
-**En .htaccess:**
-```apache
-Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
-Header always set X-Content-Type-Options "nosniff"
-Header always set X-Frame-Options "DENY"
-```
-
-### Robots.txt y Sitemap
-
-```
-# public/robots.txt
-User-agent: *
-Allow: /
-Disallow: /admin/
-Sitemap: https://tu-dominio.com/sitemap.xml
-```
-
-Generar sitemap:
-```bash
-npm run generate-sitemap
-```
-
----
-
-## 📊 Monitoreo Post-Deployment
+## Monitoreo Post-Publicación
 
 ### Google Analytics
 
+Agregar en `public/index.html` en el `<head>`:
+
 ```html
-<!-- En head de index.html -->
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=GA-XXXXXXXXX"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -329,144 +99,45 @@ npm run generate-sitemap
 </script>
 ```
 
-Métricas a monitorear:
-- Traffic por fuente (organic, direct, referral)
-- Device breakdown (mobile, tablet, desktop)
-- User flow (qué secciones visitan)
-- Bounce rate
+Reemplaza `GA-XXXXXXXXX` con tu ID de Analytics.
 
-### Search Console (Google)
+### Google Search Console
 
-1. Ve a [search.google.com/search-console](https://search.google.com/search-console)
-2. Agrega propiedad
-3. Verifica ownership (DNS record)
-4. Sube sitemap.xml
-5. Monitorea: indexación, errores, keywords
+1. Ve a search.google.com/search-console
+2. Agrega tu dominio
+3. Sube el `sitemap.xml` (generado con `npm run generate-sitemap`)
+4. Verifica ownership
 
-### Uptime Monitoring
+### UptimeRobot (Opcional)
 
-**Gratuito:**
-- [UptimeRobot](https://uptimerobot.com) — Alerta si sitio cae
-- [Statping](https://statping.io) — Auto-hosted monitoring
+Si quieres saber si el sitio cae:
 
-**Pagado:**
-- DataDog
-- New Relic
+1. Ve a uptimerobot.com
+2. Crea una alerta para tu URL
+3. Te avisa por email si algo falla
 
----
+## Costos
 
-## 🔄 Ciclo de Actualizaciones
+- **Netlify Free**: $0
+- **Vercel Free**: $0
+- **GitHub Pages**: $0
+- **Hosting compartido**: $5-15/mes
+- **Dominio**: $10-15/año
 
-### Flujo Recomendado
+Total: Puedes hacer esto completamente gratis.
 
-```
-1. Cambios locales en rama develop
-   ├─ Edita archivos
-   ├─ Testa en navegador
-   └─ git commit
+## Cosas a No Olvidar
 
-2. Pull Request a main
-   ├─ Code review (si hay equipo)
-   ├─ Approvals
-   └─ git merge
+1. **HTTPS siempre**. Sin excusas. Netlify y Vercel lo hacen automático.
+2. **Backup del código**. Git es tu backup. Siempre.
+3. **SSL certificate**: Let's Encrypt es gratis. Úsalo.
+4. **Robots.txt y Sitemap**: Para que Google te encuentre.
 
-3. Auto-deployment
-   ├─ Netlify/Vercel detectan cambios
-   ├─ Publican automáticamente
-   └─ Preview URL disponible
+## Si Algo Explota en Producción
 
-4. Monitoreo
-   ├─ Google Analytics
-   ├─ Lighthouse (cada 7 días)
-   └─ Manual testing
-```
+1. Revisa los logs (Netlify/Vercel los muestran)
+2. Mira la consola del navegador (F12)
+3. Si es un bug, arréglalo en local, commit, push
+4. Se publica automáticamente en unos segundos
 
-### CI/CD (para futuro)
-
-Si escalas a equipo:
-
-```yaml
-# .github/workflows/deploy.yml
-name: Deploy
-on:
-  push:
-    branches: [main]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Validate HTML
-        run: npm run validate
-      - name: Optimize images
-        run: npm run optimize-images
-      - name: Deploy to Netlify
-        run: npm run deploy
-```
-
----
-
-## 🆘 Troubleshooting
-
-### Sitio muestra 404
-
-**Solución:** Verifica que `public/` sea el publish directory, no raíz.
-
-### Imágenes no cargan en producción
-
-**Solución:** Rutas relativas desde `public/index.html`. Ejemplo:
-```html
-<!-- ✅ Correcto -->
-<img src="src/assets/images/hero/hero-1.jpg">
-
-<!-- ❌ Incorrecto -->
-<img src="assets/images/hero/hero-1.jpg">
-```
-
-### Estilos CSS no aplican
-
-**Solución:** Verifica rutas en `index.html`:
-```html
-<!-- ✅ Correcto (relativo) -->
-<link rel="stylesheet" href="src/assets/css/variables.css">
-
-<!-- ❌ Incorrecto (absoluto) -->
-<link rel="stylesheet" href="/assets/css/variables.css">
-```
-
-### WhatsApp no funciona en producción
-
-**Solución:** Verifica número y format en `whatsapp-integration.js`:
-```javascript
-const WHATSAPP_NUMBER = '50671668641';  // Sin +, sin espacios
-```
-
----
-
-## 💰 Costos Estimados (Mensual)
-
-| Hosting | Costo | Features |
-|---------|-------|----------|
-| Netlify Free | $0 | Suficiente para este proyecto |
-| Vercel Free | $0 | Suficiente para este proyecto |
-| GitHub Pages | $0 | Suficiente para este proyecto |
-| AWS S3 | $0.15 | + $0.15 por CloudFront |
-| Shared hosting | $5-15 | Con dominio incluido |
-| Dominio | $1-12/año | Depende de registrador |
-| **TOTAL** | **$0-15** | *Varía mucho* |
-
-**Recomendación:** Netlify Free + Dominio ($10/año)
-
----
-
-## 📚 Documentación Relacionada
-
-- [README.md](../README.md) — Descripción general
-- [CUSTOMIZATION.md](CUSTOMIZATION.md) — Personalizar antes de deploy
-- [PERFORMANCE.md](PERFORMANCE.md) — Tips de optimization
-- [SECURITY.md](../SECURITY.md) — Política de seguridad
-
----
-
-**Última actualización:** 2026-04-23
+Simple.
