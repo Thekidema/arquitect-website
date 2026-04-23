@@ -1,6 +1,6 @@
 # Cómo Contribuir
 
-Si encontrás un bug o tenés una idea, acá está cómo hacer.
+Si encontr�s un bug o tenés una idea, ac� est� cómo hacer.
 
 ## Reportar un Bug
 
@@ -15,7 +15,7 @@ Título: El carrusel se queda en blanco en Safari
 Pasos:
 1. Abro el sitio en Safari
 2. Espero 10 segundos
-3. El carrusel deja de mostrar imágenes
+3. El carrusel deja de mostrar im�genes
 
 Esperado: El carrusel sigue funcionando
 Actual: Solo se ve blanco
@@ -31,14 +31,14 @@ Abre una discussion o issue con tu idea. No hay "idea mala", solo ideas que no p
 
 1. Fork el repo
 2. Crea una rama: `git checkout -b mi-feature`
-3. Haz cambios (mantené commits pequeños y descriptivos)
+3. Haz cambios (mantené commits peque�os y descriptivos)
 4. Push y abre un PR
 
 Eso es.
 
-## Estándares Básicos
+## Est�ndares B�sicos
 
-- HTML semántico (usa `<section>`, `<article>`, no `<div>` anidados)
+- HTML sem�ntico (usa `<section>`, `<article>`, no `<div>` anidados)
 - CSS en BEM naming (`.component__element`)
 - JS vanilla, sin librerías innecesarias
 - Comentarios solo si el código no es obvio
@@ -60,7 +60,7 @@ npm run serve
 # Abre http://localhost:8000/public/
 ```
 
-Verifica en móvil, tablet, desktop. Si se ve bien, está bien.
+Verifica en móvil, tablet, desktop. Si se ve bien, est� bien.
 
 ## Si Tarda en Mergear
 

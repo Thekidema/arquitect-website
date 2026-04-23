@@ -1,10 +1,10 @@
 # C√≥mo Personalizar el Sitio
 
-Aqu√≠ est√° lo que necesitas cambiar para que sea tuyo.
+Aqu√≠ est√ lo que necesitas cambiar para que sea tuyo.
 
 ## Colores
 
-Todo est√° en `config/colors.json`. Si cambias un color all√≠, se refleja en todo el sitio autom√°ticamente.
+Todo est√ en `config/colors.json`. Si cambias un color all√≠, se refleja en todo el sitio autom√ticamente.
 
 ```json
 {
@@ -22,19 +22,19 @@ En `public/index.html` hay comentarios tipo `<!-- REEMPLAZAR_HERO_1_TITULO -->`.
 
 En VS Code: `Ctrl+H` (Buscar y reemplazar), busca `<!-- REEMPLAZAR_` y te muestra todos los lugares donde necesitas cambiar algo.
 
-## Im√°genes
+## Im√genes
 
-Las im√°genes est√°n en:
-- `src/assets/images/hero/` - Las 3 im√°genes grandes del carrusel
-- `src/assets/images/projects/` - Las 6 im√°genes del portfolio
+Las im√genes est√n en:
+- `src/assets/images/hero/` - Las 3 im√genes grandes del carrusel
+- `src/assets/images/projects/` - Las 6 im√genes del portfolio
 
-Simplemente reemplaza los archivos SVG con tus im√°genes (JPG, PNG o WebP). Mant√©n los nombres iguales.
+Simplemente reemplaza los archivos SVG con tus im√genes (JPG, PNG o WebP). Mant√©n los nombres iguales.
 
 Si cambias el formato (de .svg a .jpg), actualiza tambi√©n los `src` en `index.html`.
 
 ## N√∫mero de WhatsApp
 
-Est√° en `src/assets/js/modules/whatsapp-integration.js`:
+Est√ en `src/assets/js/modules/whatsapp-integration.js`:
 
 ```javascript
 const WHATSAPP_NUMBER = '50671668641';
@@ -113,7 +113,7 @@ En `src/assets/data/services.json`:
 
 ```json
 {
-  "title": "Dise√±o Personalizado",
+  "title": "Dise√o Personalizado",
   "count": 500,
   "unit": "+"
 }
@@ -125,7 +125,7 @@ El n√∫mero `500` es lo que anima cuando haces scroll.
 
 **Los estilos no cargan**: Verifica que las rutas en `index.html` sean correctas. Desde `public/index.html`, el path a CSS es `../src/assets/css/`.
 
-**Las im√°genes no aparecen**: Revisa que existan en `src/assets/images/` y que los nombres en `index.html` sean exactos.
+**Las im√genes no aparecen**: Revisa que existan en `src/assets/images/` y que los nombres en `index.html` sean exactos.
 
 **WhatsApp no abre**: Verifica el n√∫mero en `whatsapp-integration.js` - debe ser sin espacios, sin +.
 

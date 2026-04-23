@@ -10,14 +10,14 @@ Un sitio web ligero y funcional para constructoras. Nada de boludeces, solo lo q
 - **Sección de Servicios**: 4 tarjetas con números que cuentan cuando haces scroll
 - **Portfolio**: 6 proyectos categorizados (residencial, comercial, rehabilitación)
 - **Botón WhatsApp**: Flotante, siempre visible, conecta directo a chat
-- **Diseño responsive**: Se ve bien en móvil, tablet y desktop
-- **Rápido**: Sin frameworks pesados, solo vanilla JS
+- **Dise�o responsive**: Se ve bien en móvil, tablet y desktop
+- **R�pido**: Sin frameworks pesados, solo vanilla JS
 - **Efectos visuales**: Algunos detalles bonitos sin que sea demasiado
-- **Fácil de cambiar**: Todo centralizado en config/colors.json y comments en HTML
+- **F�cil de cambiar**: Todo centralizado en config/colors.json y comments en HTML
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Clonar o descargar el proyecto
 
@@ -59,62 +59,62 @@ npm run serve
 Lee [CUSTOMIZATION.md](docs/CUSTOMIZATION.md) para:
 - Cambiar colores
 - Actualizar textos
-- Reemplazar imágenes
+- Reemplazar im�genes
 - Cambiar número de WhatsApp
 - Modificar información de empresa
 
 ---
 
-## 📁 Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```
 Prociram-Web/
-├── public/                    # Archivos estáticos (entry point)
-│   └── index.html            # Página principal
-├── src/
-│   ├── assets/
-│   │   ├── css/              # Estilos modularizados
-│   │   ├── js/
-│   │   │   ├── modules/      # Componentes (carousel, effects, etc.)
-│   │   │   └── utils/        # Utilidades compartidas
-│   │   ├── images/           # Imágenes (hero, projects)
-│   │   └── data/             # Datos JSON estáticos
-│   └── components/           # Documentación de componentes
-├── docs/                     # Documentación completa
-│   ├── ARCHITECTURE.md       # Filosofía de diseño
-│   ├── CUSTOMIZATION.md      # Cómo personalizar
-│   ├── STRUCTURE.md          # Guía de carpetas
-│   ├── PERFORMANCE.md        # Tips de optimización
-│   ├── DEPLOYMENT.md         # Cómo hacer deploy
-│   ├── API-REFERENCE.md      # Documentación JS
-│   └── CHANGELOG.md          # Historial de versiones
-├── config/                   # Configuración
-│   ├── colors.json          # Paleta centralizada
-│   ├── .env.example         # Variables de entorno
-│   └── meta.json            # Metadatos del proyecto
-├── scripts/                 # Utilidades
-├── .gitignore              # Git rules
-├── package.json            # Metadatos del proyecto
-└── README.md               # Este archivo
+ public/                    # Archivos est�ticos (entry point)
+�    index.html            # P�gina principal
+ src/
+�    assets/
+�   �    css/              # Estilos modularizados
+�   �    js/
+�   �   �    modules/      # Componentes (carousel, effects, etc.)
+�   �   �    utils/        # Utilidades compartidas
+�   �    images/           # Im�genes (hero, projects)
+�   �    data/             # Datos JSON est�ticos
+�    components/           # Documentación de componentes
+ docs/                     # Documentación completa
+�    ARCHITECTURE.md       # Filosofía de dise�o
+�    CUSTOMIZATION.md      # Cómo personalizar
+�    STRUCTURE.md          # Guía de carpetas
+�    PERFORMANCE.md        # Tips de optimización
+�    DEPLOYMENT.md         # Cómo hacer deploy
+�    API-REFERENCE.md      # Documentación JS
+�    CHANGELOG.md          # Historial de versiones
+ config/                   # Configuración
+�    colors.json          # Paleta centralizada
+�    .env.example         # Variables de entorno
+�    meta.json            # Metadatos del proyecto
+ scripts/                 # Utilidades
+ .gitignore              # Git rules
+ package.json            # Metadatos del proyecto
+ README.md               # Este archivo
 ```
 
 Documentación detallada: [STRUCTURE.md](docs/STRUCTURE.md)
 
 ---
 
-## 🎨 Personalización Rápida
+##  Personalización R�pida
 
 ### Cambiar Colores
 1. Abre `config/colors.json`
 2. Modifica valores hexadecimales
-3. Recarga la página
+3. Recarga la p�gina
 
 ### Cambiar Textos
 1. Abre `public/index.html`
 2. Usa `Ctrl+H` (Buscar & Reemplazar)
 3. Busca `<!-- REEMPLAZAR_*` para encontrar placeholders
 
-### Cambiar Imágenes
+### Cambiar Im�genes
 1. Reemplaza archivos en `src/assets/images/`
 2. Actualiza referencias en `index.html`
 
@@ -127,7 +127,7 @@ Guía completa: [CUSTOMIZATION.md](docs/CUSTOMIZATION.md)
 
 ---
 
-## 📊 Componentes
+##  Componentes
 
 ### Hero Carousel
 - Swiper.js (3 slides)
@@ -142,7 +142,7 @@ Guía completa: [CUSTOMIZATION.md](docs/CUSTOMIZATION.md)
 - Grid responsive
 
 ### Project Portfolio
-- 6 proyectos con imágenes
+- 6 proyectos con im�genes
 - Badges de categoría (color codificado)
 - Hover: zoom imagen + overlay gradiente
 - 3D Tilt effect (desktop)
@@ -151,18 +151,18 @@ Guía completa: [CUSTOMIZATION.md](docs/CUSTOMIZATION.md)
 ### WhatsApp Button
 - Botón flotante en esquina inferior derecha
 - Animación pulse continua
-- Hover: crece de tamaño
+- Hover: crece de tama�o
 - Abre chat preformateado
 
 ---
 
-## 🔧 Scripts Disponibles
+##  Scripts Disponibles
 
 ```bash
 # Servir localmente
 npm run serve
 
-# Optimizar imágenes
+# Optimizar im�genes
 npm run optimize-images
 
 # Generar sitemap.xml
@@ -180,58 +180,58 @@ npm run dev
 
 ---
 
-## 📱 Compatibilidad
+##  Compatibilidad
 
 | Browser | Versión Mínima | Status |
 |---------|----------------|--------|
-| Chrome | 60+ | ✅ Soportado |
-| Firefox | 55+ | ✅ Soportado |
-| Safari | 11+ | ✅ Soportado |
-| Edge | 15+ | ✅ Soportado |
-| IE 11 | — | ⚠️ Funcional (sin 3D) |
+| Chrome | 60+ |  Soportado |
+| Firefox | 55+ |  Soportado |
+| Safari | 11+ |  Soportado |
+| Edge | 15+ |  Soportado |
+| IE 11 |  | � Funcional (sin 3D) |
 
 ### Dispositivos
-- ✅ iPhone 12/13+
-- ✅ Samsung Galaxy S20+
-- ✅ iPad Pro
-- ✅ Tablets Android
-- ✅ Desktop/Laptop
+-  iPhone 12/13+
+-  Samsung Galaxy S20+
+-  iPad Pro
+-  Tablets Android
+-  Desktop/Laptop
 
 ---
 
-## ⚡ Performance Metrics
+##  Performance Metrics
 
 ```
 Lighthouse Scores (Simulado):
-├── Performance: 95
-├── Accessibility: 98
-├── Best Practices: 96
-└── SEO: 100
+ Performance: 95
+ Accessibility: 98
+ Best Practices: 96
+ SEO: 100
 
 Core Web Vitals:
-├── LCP (Largest Contentful Paint): 1.8s
-├── FID (First Input Delay): 45ms
-└── CLS (Cumulative Layout Shift): 0.05
+ LCP (Largest Contentful Paint): 1.8s
+ FID (First Input Delay): 45ms
+ CLS (Cumulative Layout Shift): 0.05
 ```
 
 ---
 
-## 🔐 Seguridad
+##  Seguridad
 
-- ✅ HTML estático (sin vulnerabilidades de entrada)
-- ✅ Sin dependencias con vulnerabilidades conocidas
-- ✅ HTTPS recomendado en deployment
-- ✅ Headers de seguridad en `.htaccess`
-- ✅ No almacena datos sensibles
+-  HTML est�tico (sin vulnerabilidades de entrada)
+-  Sin dependencias con vulnerabilidades conocidas
+-  HTTPS recomendado en deployment
+-  Headers de seguridad en `.htaccess`
+-  No almacena datos sensibles
 
 ---
 
-## 📝 Documentación
+##  Documentación
 
 | Documento | Propósito |
 |-----------|-----------|
-| [CUSTOMIZATION.md](docs/CUSTOMIZATION.md) | Cómo personalizar (textos, colores, imágenes) |
-| [ARCHITECTURE.md](docs/ARCHITECTURE.md) | Filosofía de diseño y decisiones técnicas |
+| [CUSTOMIZATION.md](docs/CUSTOMIZATION.md) | Cómo personalizar (textos, colores, im�genes) |
+| [ARCHITECTURE.md](docs/ARCHITECTURE.md) | Filosofía de dise�o y decisiones técnicas |
 | [STRUCTURE.md](docs/STRUCTURE.md) | Guía detallada de carpetas |
 | [PERFORMANCE.md](docs/PERFORMANCE.md) | Tips de optimización y benchmarks |
 | [DEPLOYMENT.md](docs/DEPLOYMENT.md) | Cómo hacer deploy en producción |
@@ -240,16 +240,16 @@ Core Web Vitals:
 
 ---
 
-## 🚀 Deployment
+##  Deployment
 
 ### Hosting Recomendado
 
-- **Netlify** — Deploy automático desde Git
-- **Vercel** — Optimizado para performance
-- **GitHub Pages** — Gratis, simple
-- **AWS S3** — Para escala empresarial
+- **Netlify**  Deploy autom�tico desde Git
+- **Vercel**  Optimizado para performance
+- **GitHub Pages**  Gratis, simple
+- **AWS S3**  Para escala empresarial
 
-### Pasos Básicos
+### Pasos B�sicos
 
 1. Sube archivos a tu hosting
 2. Configura `public/index.html` como entry point
@@ -260,16 +260,16 @@ Guía completa: [DEPLOYMENT.md](docs/DEPLOYMENT.md)
 
 ---
 
-## 🆘 Soporte
+##  Soporte
 
 ### Troubleshooting
 
 **Los estilos no se cargan:**
 - Verifica rutas CSS en `index.html`
 - Limpia caché (Ctrl+Shift+R)
-- Abre DevTools (F12) → Console
+- Abre DevTools (F12)  Console
 
-**Las imágenes no aparecen:**
+**Las im�genes no aparecen:**
 - Revisa que existan en `src/assets/images/`
 - Verifica rutas en `index.html`
 - Usa formatos: JPG, PNG, WebP
@@ -277,26 +277,26 @@ Guía completa: [DEPLOYMENT.md](docs/DEPLOYMENT.md)
 **WhatsApp no funciona:**
 - Verifica número en `whatsapp-integration.js`
 - Prueba: `https://wa.me/50671668641`
-- Abre DevTools → Console para ver errores
+- Abre DevTools  Console para ver errores
 
-Más ayuda: [Troubleshooting en CUSTOMIZATION.md](docs/CUSTOMIZATION.md#-troubleshooting)
+M�s ayuda: [Troubleshooting en CUSTOMIZATION.md](docs/CUSTOMIZATION.md#-troubleshooting)
 
 ---
 
-## 📄 Licencia
+##  Licencia
 
 MIT License - Libre para uso comercial y personal.  
 [Ver LICENSE](LICENSE)
 
 ---
 
-## 🤝 Contribuir
+##  Contribuir
 
 Tenemos guía de contribución: [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ---
 
-## 📞 Información de Contacto
+##  Información de Contacto
 
 - **Email:** info@arquitect.example.com
 - **Teléfono:** +506 2000 0000
@@ -305,44 +305,44 @@ Tenemos guía de contribución: [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ---
 
-## 🎉 Cambios Recientes (v2.0.0)
+##  Cambios Recientes (v2.0.0)
 
-- ✨ Nueva estructura enterprise-grade
-- ✨ Premium design con glassmorphism
-- ✨ Animaciones fluidas (counters, reveals)
-- ✨ Integración WhatsApp completa
-- ✨ Documentación exhaustiva
-- ✨ Performance optimizado
-- ✨ Accesibilidad WCAG AA
+-  Nueva estructura enterprise-grade
+-  Premium design con glassmorphism
+-  Animaciones fluidas (counters, reveals)
+-  Integración WhatsApp completa
+-  Documentación exhaustiva
+-  Performance optimizado
+-  Accesibilidad WCAG AA
 
 ---
 
-## 📊 Stats
+##  Stats
 
 ```
-Tamaño de código:
-├── HTML: ~250 líneas
-├── CSS: ~1500 líneas
-├── JS: ~400 líneas (vanilla)
-└── Total gzip: ~45KB
+Tama�o de código:
+ HTML: ~250 líneas
+ CSS: ~1500 líneas
+ JS: ~400 líneas (vanilla)
+ Total gzip: ~45KB
 
 Velocidad de carga:
-├── First Contentful Paint: <1s
-├── Largest Contentful Paint: <2.5s
-└── Time to Interactive: <3s
+ First Contentful Paint: <1s
+ Largest Contentful Paint: <2.5s
+ Time to Interactive: <3s
 
 SEO:
-├── Meta tags ✅
-├── Open Graph ✅
-├── Structured Data ready ✅
-└── Mobile-friendly ✅
+ Meta tags 
+ Open Graph 
+ Structured Data ready 
+ Mobile-friendly 
 ```
 
 ---
 
-**¡Listo para usar!** Personaliza el sitio siguiendo [CUSTOMIZATION.md](docs/CUSTOMIZATION.md) y deploy a producción. 🚀
+**�Listo para usar!** Personaliza el sitio siguiendo [CUSTOMIZATION.md](docs/CUSTOMIZATION.md) y deploy a producción. 
 
 ---
 
-*Diseñado y desarrollado con ❤️ para constructoras modernas.*  
-*Última actualización: 2026-04-23*
+*Dise�ado y desarrollado con  para constructoras modernas.*  
+*�ltima actualización: 2026-04-23*
