@@ -4,10 +4,10 @@
 
 ```
 public/             El index.html que se ve en el navegador
-src/assets/         Todo: CSS, JS, im�genes, datos
+src/assets/         Todo: CSS, JS, imÃgenes, datos
 docs/               Este archivo y otros docs
 config/             Colores, variables de entorno
-scripts/            Scripts útiles (opcional)
+scripts/            Scripts Ãºtiles (opcional)
 ```
 
 ## Detalle
@@ -28,81 +28,81 @@ Las rutas apuntan a `../src/assets/`, que es como decirle "sube una carpeta y en
 - `premium-design.css`  Efectos visuales (sombras, glassmorphism)
 - `animations.css`  Keyframes para animaciones
 
-Si necesitas cambiar algo visual, busca en qué archivo va:
-- �Es un color?  variables.css
-- �Es de layout?  layout.css
-- �Es de un componente específico?  components.css
+Si necesitas cambiar algo visual, busca en quÃ© archivo va:
+- ÂEs un color?  variables.css
+- ÂEs de layout?  layout.css
+- ÂEs de un componente especÃ­fico?  components.css
 
 ### src/assets/js/
 
-**modules/**  Cada módulo es independiente
+**modules/**  Cada mÃ³dulo es independiente
 
 - `main.js`  Inicializa todo, punto de entrada
 - `carousel.js`  Swiper (carrusel)
 - `effects.js`  3D Tilt
 - `reveals.js`  Scroll animations
-- `counters.js`  Números animados
+- `counters.js`  NÃºmeros animados
 - `whatsapp-integration.js`  WhatsApp
 
 **utils/**  Funciones compartidas
 
 - `dom.js`  Helpers para manipular DOM
-- `animation.js`  Utilidades de animación
+- `animation.js`  Utilidades de animaciÃ³n
 - `storage.js`  LocalStorage wrapper
 
 ### src/assets/images/
 
 ```
-hero/          Las 3 im�genes grandes del carrusel
-projects/      Las 6 im�genes del portfolio
+hero/          Las 3 imÃgenes grandes del carrusel
+projects/      Las 6 imÃgenes del portfolio
 ```
 
-Reemplaza los SVG con tus propias im�genes (JPG, PNG, WebP).
+Reemplaza los SVG con tus propias imÃgenes (JPG, PNG, WebP).
 
 ### src/assets/data/
 
 JSON con datos del sitio:
 
 - `projects.json`  6 proyectos del portfolio
-- `services.json`  4 servicios con números
+- `services.json`  4 servicios con nÃºmeros
 - `company.json`  Info de contacto, equipo, certificaciones
 
-Edita JSON si necesitas cambiar datos sin tocar código.
+Edita JSON si necesitas cambiar datos sin tocar cÃ³digo.
 
 ### config/
 
 - `colors.json`  Paleta centralizada
 - `.env.example`  Template de variables (copiar a `.env`)
-- `meta.json`  Metadatos (versión, autor)
+- `meta.json`  Metadatos (versiÃ³n, autor)
 
 ### docs/
 
-Documentación:
+DocumentaciÃ³n:
 
-- `ARCHITECTURE.md`  Por qué est� hecho así
-- `CUSTOMIZATION.md`  Cómo cambiar cosas
-- `DEPLOYMENT.md`  Cómo poner en producción
-- `PERFORMANCE.md`  Tips de optimización
-- `API-REFERENCE.md`  Qué hace cada módulo JS
+- `ARCHITECTURE.md`  Por quÃ© estÃ hecho asÃ­
+- `CUSTOMIZATION.md`  CÃ³mo cambiar cosas
+- `DEPLOYMENT.md`  CÃ³mo poner en producciÃ³n
+- `PERFORMANCE.md`  Tips de optimizaciÃ³n
+- `API-REFERENCE.md`  QuÃ© hace cada mÃ³dulo JS
 - `CHANGELOG.md`  Historial de cambios
 
 ### scripts/
 
-Scripts útiles (todos opcionales):
+Scripts Ãºtiles (todos opcionales):
 
 - `build.js`  Para minificar (si lo necesitas)
-- `optimize-images.js`  Para comprimir im�genes
+- `optimize-images.js`  Para comprimir imÃgenes
 - `generate-sitemap.js`  Genera sitemap.xml
 - `validate.js`  Verifica que la estructura sea correcta
 
 Ejecuta con `npm run [script]`.
 
-## Flujo: De Dónde a Dónde
+## Flujo: De DÃ³nde a DÃ³nde
 
 ```
 public/index.html
      linkea
-../src/assets/css/variables.css    Todos los colores vienen de ac�
+../src/assets/css/variables.css    Todos los colores vienen de acÃ
 ../src/assets/css/layout.css       Grid y responsive
 ../src/assets/css/components.css   Estilos de elementos
 ../src/assets/css/animations.css   Keyframes
@@ -114,7 +114,7 @@ public/index.html
 ../src/assets/js/modules/effects.js
 ../src/assets/js/modules/counters.js
 etc...
-     usa im�genes de
+     usa imÃgenes de
 ../src/assets/images/hero/
 ../src/assets/images/projects/
      y datos de
@@ -128,9 +128,9 @@ etc...
 |---|---|
 | Color naranja | `src/assets/css/variables.css` |
 | Textos | `public/index.html` (busca `<!-- REEMPLAZAR_` |
-| Im�genes | `src/assets/images/` |
+| ImÃgenes | `src/assets/images/` |
 | Proyectos | `src/assets/data/projects.json` |
 | Servicios | `src/assets/data/services.json` |
-| Número WhatsApp | `src/assets/js/modules/whatsapp-integration.js` |
-| Tipografía | `src/assets/css/variables.css` |
+| NÃºmero WhatsApp | `src/assets/js/modules/whatsapp-integration.js` |
+| TipografÃ­a | `src/assets/css/variables.css` |
 | Colores centralizados | `config/colors.json` |

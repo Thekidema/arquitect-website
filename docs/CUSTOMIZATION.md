@@ -1,10 +1,10 @@
-# Cómo Personalizar el Sitio
+# CÃ³mo Personalizar el Sitio
 
-Aquí est� lo que necesitas cambiar para que sea tuyo.
+AquÃ­ estÃ lo que necesitas cambiar para que sea tuyo.
 
 ## Colores
 
-Todo est� en `config/colors.json`. Si cambias un color allí, se refleja en todo el sitio autom�ticamente.
+Todo estÃ en `config/colors.json`. Si cambias un color allÃ­, se refleja en todo el sitio automÃticamente.
 
 ```json
 {
@@ -14,7 +14,7 @@ Todo est� en `config/colors.json`. Si cambias un color allí, se refleja en todo
 }
 ```
 
-Cambias `#F97316` por otro color y listo. Usa [Coolors.co](https://coolors.co) si necesitas inspiración.
+Cambias `#F97316` por otro color y listo. Usa [Coolors.co](https://coolors.co) si necesitas inspiraciÃ³n.
 
 ## Textos
 
@@ -22,27 +22,27 @@ En `public/index.html` hay comentarios tipo `<!-- REEMPLAZAR_HERO_1_TITULO -->`.
 
 En VS Code: `Ctrl+H` (Buscar y reemplazar), busca `<!-- REEMPLAZAR_` y te muestra todos los lugares donde necesitas cambiar algo.
 
-## Im�genes
+## ImÃgenes
 
-Las im�genes est�n en:
-- `src/assets/images/hero/` - Las 3 im�genes grandes del carrusel
-- `src/assets/images/projects/` - Las 6 im�genes del portfolio
+Las imÃgenes estÃn en:
+- `src/assets/images/hero/` - Las 3 imÃgenes grandes del carrusel
+- `src/assets/images/projects/` - Las 6 imÃgenes del portfolio
 
-Simplemente reemplaza los archivos SVG con tus im�genes (JPG, PNG o WebP). Mantén los nombres iguales.
+Simplemente reemplaza los archivos SVG con tus imÃgenes (JPG, PNG o WebP). MantÃ©n los nombres iguales.
 
-Si cambias el formato (de .svg a .jpg), actualiza también los `src` en `index.html`.
+Si cambias el formato (de .svg a .jpg), actualiza tambiÃ©n los `src` en `index.html`.
 
-## Número de WhatsApp
+## NÃºmero de WhatsApp
 
-Est� en `src/assets/js/modules/whatsapp-integration.js`:
+EstÃ en `src/assets/js/modules/whatsapp-integration.js`:
 
 ```javascript
 const WHATSAPP_NUMBER = '50671668641';
 ```
 
-Cambias el número por el tuyo (sin espacios, sin +).
+Cambias el nÃºmero por el tuyo (sin espacios, sin +).
 
-## Información de la Empresa
+## InformaciÃ³n de la Empresa
 
 En `src/assets/data/company.json`:
 
@@ -51,36 +51,36 @@ En `src/assets/data/company.json`:
   "name": "ARQUITECT",
   "email": "info@arquitect.example.com",
   "phone": "+506 2000 0000",
-  "address": "San José, Costa Rica"
+  "address": "San JosÃ©, Costa Rica"
 }
 ```
 
-Actualiza con tu información.
+Actualiza con tu informaciÃ³n.
 
-## Tipografía
+## TipografÃ­a
 
 Si no te gusta Playfair Display o Outfit, cambia en `src/assets/css/variables.css`:
 
 ```css
 :root {
-  --font-family-display: 'Playfair Display';  // Títulos grandes
+  --font-family-display: 'Playfair Display';  // TÃ­tulos grandes
   --font-family-base: 'Outfit';               // Texto normal
 }
 ```
 
-Busca una fuente en [Google Fonts](https://fonts.google.com), copia el nombre exacto y actualiza aquí.
+Busca una fuente en [Google Fonts](https://fonts.google.com), copia el nombre exacto y actualiza aquÃ­.
 
-También actualiza el import en `public/index.html`:
+TambiÃ©n actualiza el import en `public/index.html`:
 
 ```html
 <link href="https://fonts.googleapis.com/css2?family=Tu+Nueva+Fuente" rel="stylesheet">
 ```
 
-## Categorías de Proyectos
+## CategorÃ­as de Proyectos
 
 Hay 3 tipos: `residencial`, `comercial`, `rehabilitacion`. Cada uno tiene su color.
 
-Si necesitas agregar una nueva categoría, agrega en `config/colors.json`:
+Si necesitas agregar una nueva categorÃ­a, agrega en `config/colors.json`:
 
 ```json
 "categories": {
@@ -99,13 +99,13 @@ En `src/assets/data/projects.json`:
   "id": 1,
   "title": "Nombre del proyecto",
   "category": "residencial",
-  "description": "Descripción corta",
+  "description": "DescripciÃ³n corta",
   "image": "project-1.jpg",
   "link": "https://link-al-proyecto.com"
 }
 ```
 
-Edita o agrega proyectos aquí.
+Edita o agrega proyectos aquÃ­.
 
 ## Servicios
 
@@ -113,20 +113,20 @@ En `src/assets/data/services.json`:
 
 ```json
 {
-  "title": "Dise�o Personalizado",
+  "title": "DiseÃo Personalizado",
   "count": 500,
   "unit": "+"
 }
 ```
 
-El número `500` es lo que anima cuando haces scroll.
+El nÃºmero `500` es lo que anima cuando haces scroll.
 
 ## Si Algo No Funciona
 
 **Los estilos no cargan**: Verifica que las rutas en `index.html` sean correctas. Desde `public/index.html`, el path a CSS es `../src/assets/css/`.
 
-**Las im�genes no aparecen**: Revisa que existan en `src/assets/images/` y que los nombres en `index.html` sean exactos.
+**Las imÃgenes no aparecen**: Revisa que existan en `src/assets/images/` y que los nombres en `index.html` sean exactos.
 
-**WhatsApp no abre**: Verifica el número en `whatsapp-integration.js` - debe ser sin espacios, sin +.
+**WhatsApp no abre**: Verifica el nÃºmero en `whatsapp-integration.js` - debe ser sin espacios, sin +.
 
-**Tipografía no cambia**: Espera a que Google Fonts cargue (puede tardar unos segundos). Limpia caché del navegador (Ctrl+Shift+R).
+**TipografÃ­a no cambia**: Espera a que Google Fonts cargue (puede tardar unos segundos). Limpia cachÃ© del navegador (Ctrl+Shift+R).

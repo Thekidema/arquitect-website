@@ -4,16 +4,16 @@ Un sitio web ligero y funcional para constructoras. Nada de boludeces, solo lo q
 
 ---
 
-## Qué tiene
+## QuÃ© tiene
 
-- **Carrusel Hero**: 3 slides con navegación manual y autoplay
-- **Sección de Servicios**: 4 tarjetas con números que cuentan cuando haces scroll
-- **Portfolio**: 6 proyectos categorizados (residencial, comercial, rehabilitación)
-- **Botón WhatsApp**: Flotante, siempre visible, conecta directo a chat
-- **Dise�o responsive**: Se ve bien en móvil, tablet y desktop
-- **R�pido**: Sin frameworks pesados, solo vanilla JS
+- **Carrusel Hero**: 3 slides con navegaciÃ³n manual y autoplay
+- **SecciÃ³n de Servicios**: 4 tarjetas con nÃºmeros que cuentan cuando haces scroll
+- **Portfolio**: 6 proyectos categorizados (residencial, comercial, rehabilitaciÃ³n)
+- **BotÃ³n WhatsApp**: Flotante, siempre visible, conecta directo a chat
+- **DiseÃo responsive**: Se ve bien en mÃ³vil, tablet y desktop
+- **RÃpido**: Sin frameworks pesados, solo vanilla JS
 - **Efectos visuales**: Algunos detalles bonitos sin que sea demasiado
-- **F�cil de cambiar**: Todo centralizado en config/colors.json y comments en HTML
+- **FÃcil de cambiar**: Todo centralizado en config/colors.json y comments en HTML
 
 ---
 
@@ -28,7 +28,7 @@ cd Prociram-Web
 
 ### 2. Ver en el navegador
 
-**Opción A: Abrir archivo directo**
+**OpciÃ³n A: Abrir archivo directo**
 ```bash
 # Windows
 start public/index.html
@@ -40,14 +40,14 @@ open public/index.html
 xdg-open public/index.html
 ```
 
-**Opción B: Servir localmente (con Python)**
+**OpciÃ³n B: Servir localmente (con Python)**
 ```bash
 cd Prociram-Web
 python -m http.server 8000
 # Luego abre: http://localhost:8000/public/
 ```
 
-**Opción C: Usar npm (si tienes Node.js)**
+**OpciÃ³n C: Usar npm (si tienes Node.js)**
 ```bash
 npm install
 npm run serve
@@ -59,9 +59,9 @@ npm run serve
 Lee [CUSTOMIZATION.md](docs/CUSTOMIZATION.md) para:
 - Cambiar colores
 - Actualizar textos
-- Reemplazar im�genes
-- Cambiar número de WhatsApp
-- Modificar información de empresa
+- Reemplazar imÃgenes
+- Cambiar nÃºmero de WhatsApp
+- Modificar informaciÃ³n de empresa
 
 ---
 
@@ -69,61 +69,61 @@ Lee [CUSTOMIZATION.md](docs/CUSTOMIZATION.md) para:
 
 ```
 Prociram-Web/
- public/                    # Archivos est�ticos (entry point)
-�    index.html            # P�gina principal
+ public/                    # Archivos estÃticos (entry point)
+    index.html            # PÃgina principal
  src/
-�    assets/
-�   �    css/              # Estilos modularizados
-�   �    js/
-�   �   �    modules/      # Componentes (carousel, effects, etc.)
-�   �   �    utils/        # Utilidades compartidas
-�   �    images/           # Im�genes (hero, projects)
-�   �    data/             # Datos JSON est�ticos
-�    components/           # Documentación de componentes
- docs/                     # Documentación completa
-�    ARCHITECTURE.md       # Filosofía de dise�o
-�    CUSTOMIZATION.md      # Cómo personalizar
-�    STRUCTURE.md          # Guía de carpetas
-�    PERFORMANCE.md        # Tips de optimización
-�    DEPLOYMENT.md         # Cómo hacer deploy
-�    API-REFERENCE.md      # Documentación JS
-�    CHANGELOG.md          # Historial de versiones
- config/                   # Configuración
-�    colors.json          # Paleta centralizada
-�    .env.example         # Variables de entorno
-�    meta.json            # Metadatos del proyecto
+    assets/
+       css/              # Estilos modularizados
+       js/
+          modules/      # Componentes (carousel, effects, etc.)
+          utils/        # Utilidades compartidas
+       images/           # ImÃgenes (hero, projects)
+       data/             # Datos JSON estÃticos
+    components/           # DocumentaciÃ³n de componentes
+ docs/                     # DocumentaciÃ³n completa
+    ARCHITECTURE.md       # FilosofÃ­a de diseÃo
+    CUSTOMIZATION.md      # CÃ³mo personalizar
+    STRUCTURE.md          # GuÃ­a de carpetas
+    PERFORMANCE.md        # Tips de optimizaciÃ³n
+    DEPLOYMENT.md         # CÃ³mo hacer deploy
+    API-REFERENCE.md      # DocumentaciÃ³n JS
+    CHANGELOG.md          # Historial de versiones
+ config/                   # ConfiguraciÃ³n
+    colors.json          # Paleta centralizada
+    .env.example         # Variables de entorno
+    meta.json            # Metadatos del proyecto
  scripts/                 # Utilidades
  .gitignore              # Git rules
  package.json            # Metadatos del proyecto
  README.md               # Este archivo
 ```
 
-Documentación detallada: [STRUCTURE.md](docs/STRUCTURE.md)
+DocumentaciÃ³n detallada: [STRUCTURE.md](docs/STRUCTURE.md)
 
 ---
 
-##  Personalización R�pida
+##  PersonalizaciÃ³n RÃpida
 
 ### Cambiar Colores
 1. Abre `config/colors.json`
 2. Modifica valores hexadecimales
-3. Recarga la p�gina
+3. Recarga la pÃgina
 
 ### Cambiar Textos
 1. Abre `public/index.html`
 2. Usa `Ctrl+H` (Buscar & Reemplazar)
 3. Busca `<!-- REEMPLAZAR_*` para encontrar placeholders
 
-### Cambiar Im�genes
+### Cambiar ImÃgenes
 1. Reemplaza archivos en `src/assets/images/`
 2. Actualiza referencias en `index.html`
 
 ### Cambiar WhatsApp
 1. En `src/assets/js/modules/whatsapp-integration.js`
 2. Busca: `const WHATSAPP_NUMBER`
-3. Cambia el número (sin espacios)
+3. Cambia el nÃºmero (sin espacios)
 
-Guía completa: [CUSTOMIZATION.md](docs/CUSTOMIZATION.md)
+GuÃ­a completa: [CUSTOMIZATION.md](docs/CUSTOMIZATION.md)
 
 ---
 
@@ -131,27 +131,27 @@ Guía completa: [CUSTOMIZATION.md](docs/CUSTOMIZATION.md)
 
 ### Hero Carousel
 - Swiper.js (3 slides)
-- Autoplay y navegación manual
+- Autoplay y navegaciÃ³n manual
 - Contador "1/3", dots, flechas
 - Responsive
 
 ### Service Cards
 - 4 tarjetas con emojis
-- Números animados (contadores)
-- Hover effects (elevación, línea naranja)
+- NÃºmeros animados (contadores)
+- Hover effects (elevaciÃ³n, lÃ­nea naranja)
 - Grid responsive
 
 ### Project Portfolio
-- 6 proyectos con im�genes
-- Badges de categoría (color codificado)
+- 6 proyectos con imÃgenes
+- Badges de categorÃ­a (color codificado)
 - Hover: zoom imagen + overlay gradiente
 - 3D Tilt effect (desktop)
 - Links individuales
 
 ### WhatsApp Button
-- Botón flotante en esquina inferior derecha
-- Animación pulse continua
-- Hover: crece de tama�o
+- BotÃ³n flotante en esquina inferior derecha
+- AnimaciÃ³n pulse continua
+- Hover: crece de tamaÃo
 - Abre chat preformateado
 
 ---
@@ -162,7 +162,7 @@ Guía completa: [CUSTOMIZATION.md](docs/CUSTOMIZATION.md)
 # Servir localmente
 npm run serve
 
-# Optimizar im�genes
+# Optimizar imÃgenes
 npm run optimize-images
 
 # Generar sitemap.xml
@@ -182,13 +182,13 @@ npm run dev
 
 ##  Compatibilidad
 
-| Browser | Versión Mínima | Status |
+| Browser | VersiÃ³n MÃ­nima | Status |
 |---------|----------------|--------|
 | Chrome | 60+ |  Soportado |
 | Firefox | 55+ |  Soportado |
 | Safari | 11+ |  Soportado |
 | Edge | 15+ |  Soportado |
-| IE 11 |  | � Funcional (sin 3D) |
+| IE 11 |  |   Funcional (sin 3D) |
 
 ### Dispositivos
 -  iPhone 12/13+
@@ -218,7 +218,7 @@ Core Web Vitals:
 
 ##  Seguridad
 
--  HTML est�tico (sin vulnerabilidades de entrada)
+-  HTML estÃtico (sin vulnerabilidades de entrada)
 -  Sin dependencias con vulnerabilidades conocidas
 -  HTTPS recomendado en deployment
 -  Headers de seguridad en `.htaccess`
@@ -226,16 +226,16 @@ Core Web Vitals:
 
 ---
 
-##  Documentación
+##  DocumentaciÃ³n
 
-| Documento | Propósito |
+| Documento | PropÃ³sito |
 |-----------|-----------|
-| [CUSTOMIZATION.md](docs/CUSTOMIZATION.md) | Cómo personalizar (textos, colores, im�genes) |
-| [ARCHITECTURE.md](docs/ARCHITECTURE.md) | Filosofía de dise�o y decisiones técnicas |
-| [STRUCTURE.md](docs/STRUCTURE.md) | Guía detallada de carpetas |
-| [PERFORMANCE.md](docs/PERFORMANCE.md) | Tips de optimización y benchmarks |
-| [DEPLOYMENT.md](docs/DEPLOYMENT.md) | Cómo hacer deploy en producción |
-| [API-REFERENCE.md](docs/API-REFERENCE.md) | Documentación de módulos JS |
+| [CUSTOMIZATION.md](docs/CUSTOMIZATION.md) | CÃ³mo personalizar (textos, colores, imÃgenes) |
+| [ARCHITECTURE.md](docs/ARCHITECTURE.md) | FilosofÃ­a de diseÃo y decisiones tÃ©cnicas |
+| [STRUCTURE.md](docs/STRUCTURE.md) | GuÃ­a detallada de carpetas |
+| [PERFORMANCE.md](docs/PERFORMANCE.md) | Tips de optimizaciÃ³n y benchmarks |
+| [DEPLOYMENT.md](docs/DEPLOYMENT.md) | CÃ³mo hacer deploy en producciÃ³n |
+| [API-REFERENCE.md](docs/API-REFERENCE.md) | DocumentaciÃ³n de mÃ³dulos JS |
 | [CHANGELOG.md](docs/CHANGELOG.md) | Historial de versiones |
 
 ---
@@ -244,19 +244,19 @@ Core Web Vitals:
 
 ### Hosting Recomendado
 
-- **Netlify**  Deploy autom�tico desde Git
+- **Netlify**  Deploy automÃtico desde Git
 - **Vercel**  Optimizado para performance
 - **GitHub Pages**  Gratis, simple
 - **AWS S3**  Para escala empresarial
 
-### Pasos B�sicos
+### Pasos BÃsicos
 
 1. Sube archivos a tu hosting
 2. Configura `public/index.html` como entry point
 3. Activa HTTPS (recomendado)
 4. Configura headers de cache
 
-Guía completa: [DEPLOYMENT.md](docs/DEPLOYMENT.md)
+GuÃ­a completa: [DEPLOYMENT.md](docs/DEPLOYMENT.md)
 
 ---
 
@@ -266,20 +266,20 @@ Guía completa: [DEPLOYMENT.md](docs/DEPLOYMENT.md)
 
 **Los estilos no se cargan:**
 - Verifica rutas CSS en `index.html`
-- Limpia caché (Ctrl+Shift+R)
+- Limpia cachÃ© (Ctrl+Shift+R)
 - Abre DevTools (F12)  Console
 
-**Las im�genes no aparecen:**
+**Las imÃgenes no aparecen:**
 - Revisa que existan en `src/assets/images/`
 - Verifica rutas en `index.html`
 - Usa formatos: JPG, PNG, WebP
 
 **WhatsApp no funciona:**
-- Verifica número en `whatsapp-integration.js`
+- Verifica nÃºmero en `whatsapp-integration.js`
 - Prueba: `https://wa.me/50671668641`
 - Abre DevTools  Console para ver errores
 
-M�s ayuda: [Troubleshooting en CUSTOMIZATION.md](docs/CUSTOMIZATION.md#-troubleshooting)
+MÃs ayuda: [Troubleshooting en CUSTOMIZATION.md](docs/CUSTOMIZATION.md#-troubleshooting)
 
 ---
 
@@ -292,16 +292,16 @@ MIT License - Libre para uso comercial y personal.
 
 ##  Contribuir
 
-Tenemos guía de contribución: [CONTRIBUTING.md](CONTRIBUTING.md)
+Tenemos guÃ­a de contribuciÃ³n: [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ---
 
-##  Información de Contacto
+##  InformaciÃ³n de Contacto
 
 - **Email:** info@arquitect.example.com
-- **Teléfono:** +506 2000 0000
+- **TelÃ©fono:** +506 2000 0000
 - **WhatsApp:** +506 71668641
-- **Ubicación:** San José, Costa Rica
+- **UbicaciÃ³n:** San JosÃ©, Costa Rica
 
 ---
 
@@ -310,8 +310,8 @@ Tenemos guía de contribución: [CONTRIBUTING.md](CONTRIBUTING.md)
 -  Nueva estructura enterprise-grade
 -  Premium design con glassmorphism
 -  Animaciones fluidas (counters, reveals)
--  Integración WhatsApp completa
--  Documentación exhaustiva
+-  IntegraciÃ³n WhatsApp completa
+-  DocumentaciÃ³n exhaustiva
 -  Performance optimizado
 -  Accesibilidad WCAG AA
 
@@ -320,10 +320,10 @@ Tenemos guía de contribución: [CONTRIBUTING.md](CONTRIBUTING.md)
 ##  Stats
 
 ```
-Tama�o de código:
- HTML: ~250 líneas
- CSS: ~1500 líneas
- JS: ~400 líneas (vanilla)
+TamaÃo de cÃ³digo:
+ HTML: ~250 lÃ­neas
+ CSS: ~1500 lÃ­neas
+ JS: ~400 lÃ­neas (vanilla)
  Total gzip: ~45KB
 
 Velocidad de carga:
@@ -340,9 +340,9 @@ SEO:
 
 ---
 
-**�Listo para usar!** Personaliza el sitio siguiendo [CUSTOMIZATION.md](docs/CUSTOMIZATION.md) y deploy a producción. 
+**ÂListo para usar!** Personaliza el sitio siguiendo [CUSTOMIZATION.md](docs/CUSTOMIZATION.md) y deploy a producciÃ³n. 
 
 ---
 
-*Dise�ado y desarrollado con  para constructoras modernas.*  
-*�ltima actualización: 2026-04-23*
+*DiseÃado y desarrollado con  para constructoras modernas.*  
+*Ãltima actualizaciÃ³n: 2026-04-23*
