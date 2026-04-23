@@ -21,7 +21,7 @@ function createFloatingButton() {
   floatingBtn.setAttribute('data-analytics', 'whatsapp-floating-btn');
 
   floatingBtn.innerHTML = `
-    <img src="../../../src/assets/icons/whatsapp.png" alt="WhatsApp" class="w-full h-full object-contain" loading="lazy" decoding="async">
+    <img src="../src/assets/icons/whatsapp.png" alt="WhatsApp" class="w-full h-full object-contain" loading="lazy" decoding="async">
   `;
 
   document.body.appendChild(floatingBtn);
