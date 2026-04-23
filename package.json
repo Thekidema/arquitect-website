@@ -1,0 +1,32 @@
+{
+  "name": "arquitect-website",
+  "version": "2.0.0",
+  "description": "Sitio web profesional para constructora ARQUITECT - Estructura enterprise-grade",
+  "author": "ARQUITECT Team",
+  "license": "MIT",
+  "homepage": "https://arquitect.example.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arquitect/website.git"
+  },
+  "scripts": {
+    "dev": "echo 'Desarrollo: Abre public/index.html en navegador'",
+    "build": "node scripts/build.js",
+    "optimize-images": "node scripts/optimize-images.js",
+    "generate-sitemap": "node scripts/generate-sitemap.js",
+    "validate": "node scripts/validate.js",
+    "serve": "python -m http.server 8000"
+  },
+  "keywords": [
+    "arquitectura",
+    "constructora",
+    "proyectos",
+    "diseño",
+    "responsive"
+  ],
+  "engine": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

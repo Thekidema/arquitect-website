@@ -1,0 +1,46 @@
+{
+  "name": "ARQUITECT",
+  "version": "2.0.0",
+  "description": "Constructora especializada en arquitectura contemporánea",
+  "author": "ARQUITECT Team",
+  "license": "MIT",
+  "homepage": "https://arquitect.example.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arquitect/website.git"
+  },
+  "keywords": [
+    "arquitectura",
+    "constructora",
+    "proyectos",
+    "diseño",
+    "responsive",
+    "premium"
+  ],
+  "seo": {
+    "title": "ARQUITECT | Constructora Especializada",
+    "description": "Constructora de proyectos residenciales, comerciales y rehabilitación con arquitectura contemporánea",
+    "ogImage": "https://arquitect.example.com/og-image.jpg",
+    "twitterCard": "summary_large_image"
+  },
+  "contact": {
+    "email": "info@arquitect.example.com",
+    "phone": "+506 2000 0000",
+    "whatsapp": "50671668641",
+    "address": "San José, Costa Rica"
+  },
+  "social": {
+    "instagram": "https://instagram.com/arquitect",
+    "facebook": "https://facebook.com/arquitect",
+    "linkedin": "https://linkedin.com/company/arquitect"
+  },
+  "analytics": {
+    "googleAnalyticsId": "",
+    "facebookPixelId": ""
+  },
+  "deployment": {
+    "environment": "production",
+    "buildTime": "2026-04-23",
+    "branch": "main"
+  }
+}

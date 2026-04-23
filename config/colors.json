@@ -1,0 +1,30 @@
+{
+  "primary": {
+    "bg": "#FAFAFA",
+    "text": "#1C1C1C",
+    "text-secondary": "#6B7280",
+    "surface": "#FFFFFF",
+    "border": "#E5E5E5"
+  },
+  "accent": {
+    "main": "#F97316",
+    "light": "#FED7AA",
+    "dark": "#EA580C"
+  },
+  "categories": {
+    "residencial": "#F97316",
+    "comercial": "#3B82F6",
+    "rehabilitacion": "#10B981"
+  },
+  "gradients": {
+    "dark": "linear-gradient(135deg, #0F172A 0%, #1E293B 100%)",
+    "warm": "linear-gradient(135deg, #F97316 0%, #FED7AA 100%)",
+    "cool": "linear-gradient(135deg, #3B82F6 0%, #93C5FD 100%)"
+  },
+  "semantic": {
+    "success": "#10B981",
+    "warning": "#F59E0B",
+    "error": "#EF4444",
+    "info": "#3B82F6"
+  }
+}

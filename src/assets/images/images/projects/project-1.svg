@@ -1,0 +1,13 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400'>
+  <defs>
+    <linearGradient id='pgrad1' x1='0%' y1='0%' x2='100%' y2='100%'>
+      <stop offset='0%' style='stop-color:#1C1C1C;stop-opacity:1' />
+      <stop offset='100%' style='stop-color:#2A2A2A;stop-opacity:1' />
+    </linearGradient>
+  </defs>
+  <rect width='400' height='400' fill='url(#pgrad1)'/>
+  <rect x='40' y='40' width='140' height='320' fill='#F97316' opacity='0.8'/>
+  <rect x='220' y='120' width='140' height='240' fill='#E5E5E5' opacity='0.9'/>
+  <rect x='140' y='200' width='120' height='160' fill='#FFFFFF' opacity='0.6'/>
+  <text x='200' y='210' text-anchor='middle' fill='#F97316' font-size='14' font-family='Inter' opacity='0.5'>Torre Ámbar</text>
+</svg>

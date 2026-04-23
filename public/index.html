@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARQUITECT | Constructora</title>
+
+  <!-- Meta Tags SEO/Open Graph -->
+  <meta name="description" content="Constructora especializada en arquitectura contemporánea. Proyectos residenciales, comerciales y rehabilitación.">
+  <meta property="og:title" content="ARQUITECT | Constructora">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Proyectos residenciales, comerciales y rehabilitación. Arquitectura que transforma espacios.">
+  <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect width='1200' height='630' fill='%231C1C1C'/%3E%3Ctext x='600' y='315' text-anchor='middle' fill='white' font-size='48' font-family='Arial'%3EARQUITECT%3C/text%3E%3C/svg%3E">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23F97316'/%3E%3Ctext x='50' y='70' font-size='60' text-anchor='middle' fill='white' font-family='Arial'%3EA%3C/text%3E%3C/svg%3E">
+
+  <!-- Dependencias CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../src/assets/css/variables.css">
+  <link rel="stylesheet" href="../src/assets/css/layout.css">
+  <link rel="stylesheet" href="../src/assets/css/components.css">
+  <link rel="stylesheet" href="../src/assets/css/animations.css">
+  <link rel="stylesheet" href="../src/assets/css/premium-design.css">
+  <style>
+    :root {
+      --color-bg: #FAFAFA;
+      --color-text: #1C1C1C;
+      --color-text-secondary: #6B7280;
+      --color-accent: #F97316;
+      --color-border: #E5E5E5;
+      --color-surface: #FFFFFF;
+      --font-family-display: 'Playfair Display', serif;
+      --font-family-base: 'Outfit', sans-serif;
+    }
+    body { font-family: var(--font-family-base); }
+  </style>
+</head>
+<body class="bg-[var(--color-bg)] text-[var(--color-text)]">
+
+  <!-- Header -->
+  <header class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex items-center justify-between border-b border-[var(--color-border)]">
+    <div class="text-2xl font-bold tracking-tight text-[var(--color-text)]">
+      <!-- REEMPLAZAR_LOGO -->ARQUITECT<span class="text-[var(--color-accent)]">.</span>
+    </div>
+    <nav class="hidden md:flex gap-8 text-sm font-medium" aria-label="Navegación principal" role="navigation">
+      <a href="#" class="text-[var(--color-accent)] border-b-2 border-[var(--color-accent)] pb-1" aria-current="page">Proyectos</a>
+      <a href="#" class="text-[var(--color-text)] hover:text-[var(--color-accent)] transition">Estudio</a>
+      <a href="#" class="text-[var(--color-text)] hover:text-[var(--color-accent)] transition">Contacto</a>
+    </nav>
+    <button class="md:hidden text-[var(--color-text)] hover:text-[var(--color-accent)] transition" aria-label="Menú móvil">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+    </button>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+    <nav class="flex text-sm" aria-label="Breadcrumb" role="navigation">
+      <ol class="flex items-center space-x-2">
+        <li><a href="#" class="breadcrumb__item text-[var(--color-text-secondary)] flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /></svg>Inicio</a></li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--color-border)" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg></li>
+        <li><a href="#" class="breadcrumb__item text-[var(--color-text-secondary)]">Proyectos</a></li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--color-border)" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg></li>
+        <li><span class="text-[var(--color-accent)] font-medium">Destacados</span></li>
+      </ol>
+    </nav>
+  </div>
+
+  <!-- Main -->
+  <main>
+    <!-- Hero Carrusel -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-14" data-aos="fade-up" data-aos-duration="800">
+      <div class="relative rounded-2xl overflow-hidden">
+        <div class="swiper hero-carousel h-[420px] md:h-[520px] rounded-2xl">
+          <div class="swiper-wrapper">
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide hero-carousel__slide">
+              <img src="../src/assets/images/hero/hero-1.svg" alt="Torre Ámbar" class="w-full h-full object-cover" loading="eager" decoding="async">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+              <div class="absolute bottom-0 left-0 p-8 md:p-10 text-white">
+                <span class="px-3 py-1.5 bg-[var(--color-accent)] text-white text-xs font-semibold rounded-full tracking-wide">PROYECTO DESTACADO</span>
+                <h3 class="text-3xl md:text-4xl lg:text-5xl font-light mt-5 tracking-tight"><!-- REEMPLAZAR_HERO_1_TITULO -->Torre Ámbar</h3>
+                <p class="text-white/80 mt-3 max-w-lg text-base md:text-lg leading-relaxed"><!-- REEMPLAZAR_HERO_1_DESC -->22 departamentos de lujo con vista panorámica en el corazón de Madrid.</p>
+                <a href="#" class="inline-block mt-6 px-7 py-3.5 bg-white text-[var(--color-text)] text-sm font-medium rounded-lg hover:bg-[var(--color-accent)] hover:text-white transition-all shadow-lg">Descubrir proyecto →</a>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide hero-carousel__slide">
+              <img src="assets/images/hero/hero-2.svg" alt="Edificio Nexus" class="w-full h-full object-cover" loading="lazy" decoding="async">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+              <div class="absolute bottom-0 left-0 p-8 md:p-10 text-white">
+                <span class="px-3 py-1.5 bg-[var(--color-accent)] text-white text-xs font-semibold rounded-full tracking-wide">PROYECTO DESTACADO</span>
+                <h3 class="text-3xl md:text-4xl lg:text-5xl font-light mt-5 tracking-tight"><!-- REEMPLAZAR_HERO_2_TITULO -->Edificio Nexus</h3>
+                <p class="text-white/80 mt-3 max-w-lg text-base md:text-lg leading-relaxed"><!-- REEMPLAZAR_HERO_2_DESC -->Oficinas inteligentes y espacios colaborativos con certificación LEED Platinum.</p>
+                <a href="#" class="inline-block mt-6 px-7 py-3.5 bg-white text-[var(--color-text)] text-sm font-medium rounded-lg hover:bg-[var(--color-accent)] hover:text-white transition-all shadow-lg">Descubrir proyecto →</a>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide hero-carousel__slide">
+              <img src="assets/images/hero/hero-3.svg" alt="Fábrica Loft" class="w-full h-full object-cover" loading="lazy" decoding="async">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+              <div class="absolute bottom-0 left-0 p-8 md:p-10 text-white">
+                <span class="px-3 py-1.5 bg-[var(--color-accent)] text-white text-xs font-semibold rounded-full tracking-wide">PROYECTO DESTACADO</span>
+                <h3 class="text-3xl md:text-4xl lg:text-5xl font-light mt-5 tracking-tight"><!-- REEMPLAZAR_HERO_3_TITULO -->Fábrica Loft</h3>
+                <p class="text-white/80 mt-3 max-w-lg text-base md:text-lg leading-relaxed"><!-- REEMPLAZAR_HERO_3_DESC -->Antigua nave industrial convertida en espacios creativos para diseño y arte.</p>
+                <a href="#" class="inline-block mt-6 px-7 py-3.5 bg-white text-[var(--color-text)] text-sm font-medium rounded-lg hover:bg-[var(--color-accent)] hover:text-white transition-all shadow-lg">Descubrir proyecto →</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination !bottom-6"></div>
+          <div class="swiper-button-next !right-5"></div>
+          <div class="swiper-button-prev !left-5"></div>
+          <div class="hero-carousel__counter absolute top-6 right-6 z-10">
+            <span class="hero-carousel__counter-current js-carousel-current">1</span> / <span class="js-carousel-total">3</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="section-header mb-12" data-aos="fade-up">
+          <div class="section-divider">
+            <span>Servicios</span>
+          </div>
+          <h2 class="text-4xl md:text-5xl font-light mb-4">Atención Integral al Cliente</h2>
+          <p class="text-[var(--color-text-secondary)] text-lg max-w-2xl">Nos comprometemos a ofrecerle la mejor experiencia desde el primer contacto hasta la entrega final de su proyecto.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card-icon">🎨</div>
+            <h4>Diseño Personalizado</h4>
+            <p>Cada proyecto es único. Nos tomamos el tiempo para entender tus necesidades y crear soluciones arquitectónicas que reflejen tu visión.</p>
+            <div style="margin-top: 1.5rem; font-size: 2rem; font-weight: 700; color: var(--color-accent);">
+              <span class="counter-number" data-counter="500" data-duration="2000" data-suffix="+">0</span>
+            </div>
+            <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-top: 0.5rem;">Proyectos completados</p>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card-icon">🤝</div>
+            <h4>Atención Integral</h4>
+            <p>Equipo dedicado disponible para responder tus preguntas. Soporte continuo durante todo el proceso constructivo y post-entrega.</p>
+            <div style="margin-top: 1.5rem; font-size: 2rem; font-weight: 700; color: var(--color-accent);">
+              <span class="counter-number" data-counter="50" data-duration="2000" data-suffix="+">0</span>
+            </div>
+            <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-top: 0.5rem;">Profesionales en equipo</p>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card-icon">✅</div>
+            <h4>Garantía Asegurada</h4>
+            <p>Cumplimos con los más altos estándares de calidad y regulaciones. Garantía completa en estructuras y acabados.</p>
+            <div style="margin-top: 1.5rem; font-size: 2rem; font-weight: 700; color: var(--color-accent);">
+              <span class="counter-number" data-counter="10" data-duration="2000" data-suffix=" años">0</span>
+            </div>
+            <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-top: 0.5rem;">Garantía estructural</p>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-card-icon">📞</div>
+            <h4>Seguimiento Permanente</h4>
+            <p>Contacto directo durante la construcción. Actualizaciones regulares del progreso y soporte post-venta por 10 años.</p>
+            <a href="https://wa.me/50671668641?text=Hola,%20me%20gustaría%20solicitar%20una%20cotización" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 px-6 py-2 bg-[var(--color-accent)] text-white font-semibold rounded-lg hover:opacity-90 transition">
+              Contactar por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="mb-12" data-aos="fade-up" data-aos-duration="600">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="section-line"></span>
+          <span class="text-xs font-semibold tracking-widest text-[var(--color-accent)] uppercase">Portfolio</span>
+        </div>
+        <h2 class="text-3xl md:text-4xl font-light tracking-tight text-[var(--color-text)] mb-3">Todos los proyectos</h2>
+        <p class="text-[var(--color-text-secondary)] text-lg max-w-2xl">Arquitectura que transforma espacios. Conoce nuestras obras más recientes.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+
+        <!-- Proyecto 1 -->
+        <div class="project-card bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl overflow-hidden" data-tilt data-tilt-max="6" data-tilt-glare="true" data-tilt-scale="1.02">
+          <div class="project-card__image-wrapper aspect-square bg-[var(--color-border)] project-card__image-wrapper-inner">
+            <img src="../src/assets/images/projects/project-1.svg" alt="Torre Ámbar" class="project-card__image w-full h-full object-cover" loading="lazy" decoding="async">
+          </div>
+          <div class="p-5 project-card__content">
+            <span class="project-category-badge badge-residencial"><!-- REEMPLAZAR_PROYECTO_1_CAT -->Residencial</span>
+            <h3 class="text-xl font-semibold text-[var(--color-text)] mt-1.5 mb-2"><!-- REEMPLAZAR_PROYECTO_1_TIT -->Torre Ámbar</h3>
+            <p class="text-[var(--color-text-secondary)] text-sm leading-relaxed mb-4"><!-- REEMPLAZAR_PROYECTO_1_DESC -->22 departamentos de lujo con vista panorámica. Entrega 2025.</p>
+            <a href="<!-- REEMPLAZAR_PROYECTO_1_LINK -->#" class="inline-block px-5 py-2 border border-[var(--color-accent)] text-[var(--color-accent)] text-sm font-medium rounded-lg btn-outline">Ver proyecto →</a>
+          </div>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="project-card bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl overflow-hidden" data-tilt data-tilt-max="6" data-tilt-glare="true" data-tilt-scale="1.02">
+          <div class="project-card__image-wrapper aspect-square bg-[var(--color-border)] project-card__image-wrapper-inner">
+            <img src="../src/assets/images/projects/project-2.svg" alt="Edificio Nexus" class="project-card__image w-full h-full object-cover" loading="lazy" decoding="async">
+          </div>
+          <div class="p-5 project-card__content">
+            <span class="project-category-badge badge-comercial"><!-- REEMPLAZAR_PROYECTO_2_CAT -->Comercial</span>
+            <h3 class="text-xl font-semibold text-[var(--color-text)] mt-1.5 mb-2"><!-- REEMPLAZAR_PROYECTO_2_TIT -->Edificio Nexus</h3>
+            <p class="text-[var(--color-text-secondary)] text-sm leading-relaxed mb-4"><!-- REEMPLAZAR_PROYECTO_2_DESC -->Oficinas inteligentes y espacios colaborativos. Certificación LEED.</p>
+            <a href="<!-- REEMPLAZAR_PROYECTO_2_LINK -->#" class="inline-block px-5 py-2 border border-[var(--color-accent)] text-[var(--color-accent)] text-sm font-medium rounded-lg btn-outline">Ver proyecto →</a>
+          </div>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="project-card bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl overflow-hidden" data-tilt data-tilt-max="6" data-tilt-glare="true" data-tilt-scale="1.02">
+          <div class="project-card__image-wrapper aspect-square bg-[var(--color-border)] project-card__image-wrapper-inner">
+            <img src="../src/assets/images/projects/project-3.svg" alt="Fábrica Loft" class="project-card__image w-full h-full object-cover" loading="lazy" decoding="async">
+          </div>
+          <div class="p-5 project-card__content">
+            <span class="project-category-badge badge-rehabilitacion"><!-- REEMPLAZAR_PROYECTO_3_CAT -->Rehabilitación</span>
+            <h3 class="text-xl font-semibold text-[var(--color-text)] mt-1.5 mb-2"><!-- REEMPLAZAR_PROYECTO_3_TIT -->Fábrica Loft</h3>
+            <p class="text-[var(--color-text-secondary)] text-sm leading-relaxed mb-4"><!-- REEMPLAZAR_PROYECTO_3_DESC -->Antigua nave industrial convertida en 45 estudios de diseño.</p>
+            <a href="<!-- REEMPLAZAR_PROYECTO_3_LINK -->#" class="inline-block px-5 py-2 border border-[var(--color-accent)] text-[var(--color-accent)] text-sm font-medium rounded-lg btn-outline">Ver proyecto →</a>
+          </div>
+        </div>
+
+        <!-- Proyecto 4 -->
+        <div class="project-card bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl overflow-hidden" data-tilt data-tilt-max="6" data-tilt-glare="true" data-tilt-scale="1.02">
+          <div class="project-card__image-wrapper aspect-square bg-[var(--color-border)] project-card__image-wrapper-inner">
+            <img src="../src/assets/images/projects/project-4.svg" alt="Conjunto Los Sauces" class="project-card__image w-full h-full object-cover" loading="lazy" decoding="async">
+          </div>
+          <div class="p-5 project-card__content">
+            <span class="project-category-badge badge-residencial"><!-- REEMPLAZAR_PROYECTO_4_CAT -->Residencial</span>
+            <h3 class="text-xl font-semibold text-[var(--color-text)] mt-1.5 mb-2"><!-- REEMPLAZAR_PROYECTO_4_TIT -->Conjunto Los Sauces</h3>
+            <p class="text-[var(--color-text-secondary)] text-sm leading-relaxed mb-4"><!-- REEMPLAZAR_PROYECTO_4_DESC -->Viviendas unifamiliares con jardín privado y zonas comunes.</p>
+            <a href="<!-- REEMPLAZAR_PROYECTO_4_LINK -->#" class="inline-block px-5 py-2 border border-[var(--color-accent)] text-[var(--color-accent)] text-sm font-medium rounded-lg btn-outline">Ver proyecto →</a>
+          </div>
+        </div>
+
+        <!-- Proyecto 5 -->
+        <div class="project-card bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl overflow-hidden" data-tilt data-tilt-max="6" data-tilt-glare="true" data-tilt-scale="1.02">
+          <div class="project-card__image-wrapper aspect-square bg-[var(--color-border)] project-card__image-wrapper-inner">
+            <img src="../src/assets/images/projects/project-5.svg" alt="Hotel Atrio" class="project-card__image w-full h-full object-cover" loading="lazy" decoding="async">
+          </div>
+          <div class="p-5 project-card__content">
+            <span class="project-category-badge badge-comercial"><!-- REEMPLAZAR_PROYECTO_5_CAT -->Comercial</span>
+            <h3 class="text-xl font-semibold text-[var(--color-text)] mt-1.5 mb-2"><!-- REEMPLAZAR_PROYECTO_5_TIT -->Hotel Atrio</h3>
+            <p class="text-[var(--color-text-secondary)] text-sm leading-relaxed mb-4"><!-- REEMPLAZAR_PROYECTO_5_DESC -->Boutique hotel 5 estrellas en el centro histórico. 120 habitaciones.</p>
+            <a href="<!-- REEMPLAZAR_PROYECTO_5_LINK -->#" class="inline-block px-5 py-2 border border-[var(--color-accent)] text-[var(--color-accent)] text-sm font-medium rounded-lg btn-outline">Ver proyecto →</a>
+          </div>
+        </div>
+
+        <!-- Proyecto 6 -->
+        <div class="project-card bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl overflow-hidden" data-tilt data-tilt-max="6" data-tilt-glare="true" data-tilt-scale="1.02">
+          <div class="project-card__image-wrapper aspect-square bg-[var(--color-border)] project-card__image-wrapper-inner">
+            <img src="../src/assets/images/projects/project-6.svg" alt="Palacio de Congresos" class="project-card__image w-full h-full object-cover" loading="lazy" decoding="async">
+          </div>
+          <div class="p-5 project-card__content">
+            <span class="project-category-badge badge-rehabilitacion"><!-- REEMPLAZAR_PROYECTO_6_CAT -->Rehabilitación</span>
+            <h3 class="text-xl font-semibold text-[var(--color-text)] mt-1.5 mb-2"><!-- REEMPLAZAR_PROYECTO_6_TIT -->Palacio de Congresos</h3>
+            <p class="text-[var(--color-text-secondary)] text-sm leading-relaxed mb-4"><!-- REEMPLAZAR_PROYECTO_6_DESC -->Restauración integral y ampliación del auditorio principal.</p>
+            <a href="<!-- REEMPLAZAR_PROYECTO_6_LINK -->#" class="inline-block px-5 py-2 border border-[var(--color-accent)] text-[var(--color-accent)] text-sm font-medium rounded-lg btn-outline">Ver proyecto →</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-[var(--color-border)] mt-20 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-sm text-[var(--color-text-secondary)]">© 2024 ARQUITECT. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../src/assets/js/modules/carousel.js"></script>
+  <script src="../src/assets/js/modules/effects.js"></script>
+  <script src="../src/assets/js/modules/reveals.js"></script>
+  <script src="../src/assets/js/modules/whatsapp-integration.js"></script>
+  <script src="../src/assets/js/modules/counters.js"></script>
+  <script src="../src/assets/js/modules/main.js"></script>
+
+</body>
+</html>

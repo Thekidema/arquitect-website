@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Diseño Personalizado",
+    "description": "Desarrollo de proyectos arquitectónicos customizados según tus necesidades específicas y visión.",
+    "icon": "🎨",
+    "count": 500,
+    "unit": "+",
+    "suffix": " proyectos"
+  },
+  {
+    "id": 2,
+    "title": "Atención Integral",
+    "description": "Acompañamiento completo desde concepto inicial hasta entrega final de la obra.",
+    "icon": "🤝",
+    "count": 50,
+    "unit": "+",
+    "suffix": " años experiencia"
+  },
+  {
+    "id": 3,
+    "title": "Garantía Asegurada",
+    "description": "Todas nuestras obras cuentan con garantía estructural y acabados premium.",
+    "icon": "✅",
+    "count": 10,
+    "unit": "",
+    "suffix": " años garantía"
+  },
+  {
+    "id": 4,
+    "title": "Seguimiento Permanente",
+    "description": "Servicio postventa y asesoría continua para tu satisfacción y bienestar.",
+    "icon": "📞",
+    "count": 24,
+    "unit": "/",
+    "suffix": "7 disponibles"
+  }
+]

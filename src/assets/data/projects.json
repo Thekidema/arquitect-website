@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Residencia Moderna Altura",
+    "category": "residencial",
+    "description": "Proyecto residencial de 8 pisos con arquitectura contemporánea, integración de espacios verdes y tecnología sostenible.",
+    "image": "project-1.jpg",
+    "link": "https://arquitect.example.com/proyectos/residencia-altura"
+  },
+  {
+    "id": 2,
+    "title": "Centro Comercial Plaza Mayor",
+    "category": "comercial",
+    "description": "Complejo comercial multipropósito con 120,000 m² de área, incluye retail, oficinas y entretenimiento.",
+    "image": "project-2.jpg",
+    "link": "https://arquitect.example.com/proyectos/plaza-mayor"
+  },
+  {
+    "id": 3,
+    "title": "Rehabilitación Edificio Histórico",
+    "category": "rehabilitacion",
+    "description": "Restauración de estructura histórica manteniendo fachada original y modernizando interiores con sistemas actuales.",
+    "image": "project-3.jpg",
+    "link": "https://arquitect.example.com/proyectos/edificio-historico"
+  },
+  {
+    "id": 4,
+    "title": "Condominio Residencial Premium",
+    "category": "residencial",
+    "description": "Desarrollo residencial de lujo con 5 torres, gimnasio, spa, y áreas comunes de lujo absoluto.",
+    "image": "project-4.jpg",
+    "link": "https://arquitect.example.com/proyectos/condominio-premium"
+  },
+  {
+    "id": 5,
+    "title": "Oficinas Corporativas Tech",
+    "category": "comercial",
+    "description": "Edificio de oficinas certificado LEED con diseño colaborativo, áreas verdes y tecnología smart building.",
+    "image": "project-5.jpg",
+    "link": "https://arquitect.example.com/proyectos/oficinas-tech"
+  },
+  {
+    "id": 6,
+    "title": "Restauración Casa Colonial",
+    "category": "rehabilitacion",
+    "description": "Rehabilitación integral de casa colonial del siglo XVIII, conservando elementos patrimoniales y mejorando funcionalidad.",
+    "image": "project-6.jpg",
+    "link": "https://arquitect.example.com/proyectos/casa-colonial"
+  }
+]

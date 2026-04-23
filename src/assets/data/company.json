@@ -1,0 +1,57 @@
+{
+  "name": "ARQUITECT",
+  "tagline": "Constructora especializada en arquitectura contemporánea",
+  "description": "Somos una constructora con más de 50 años de experiencia en el diseño y construcción de proyectos residenciales, comerciales y de rehabilitación. Nuestro compromiso es transformar espacios con arquitectura contemporánea de calidad premium.",
+  "founded": 1976,
+  "contact": {
+    "email": "info@arquitect.example.com",
+    "phone": "+506 2000 0000",
+    "whatsapp": "50671668641",
+    "address": {
+      "street": "Avenida Central, Edificio ARQUITECT",
+      "city": "San José",
+      "state": "San José",
+      "country": "Costa Rica",
+      "zipcode": "10101"
+    }
+  },
+  "social": {
+    "instagram": "https://instagram.com/arquitect",
+    "facebook": "https://facebook.com/arquitect",
+    "linkedin": "https://linkedin.com/company/arquitect",
+    "twitter": "https://twitter.com/arquitect"
+  },
+  "hours": {
+    "monday": "08:00 - 18:00",
+    "tuesday": "08:00 - 18:00",
+    "wednesday": "08:00 - 18:00",
+    "thursday": "08:00 - 18:00",
+    "friday": "08:00 - 18:00",
+    "saturday": "09:00 - 14:00",
+    "sunday": "Cerrado"
+  },
+  "team": {
+    "ceo": "Nombre Apellido",
+    "director_proyectos": "Nombre Apellido",
+    "contacto_ventas": "Nombre Apellido",
+    "total_employees": 45
+  },
+  "certifications": [
+    "ISO 9001:2015",
+    "ISO 45001:2018",
+    "LEED Certified Partner",
+    "Miembro Cámara Constructores"
+  ],
+  "specialties": [
+    "Arquitectura contemporánea",
+    "Diseño sostenible",
+    "Proyectos residenciales",
+    "Proyectos comerciales",
+    "Rehabilitación y restauración"
+  ],
+  "awards": [
+    "Mejor Proyecto Residencial 2023",
+    "Excelencia en Construcción 2022",
+    "Sustainability Award 2023"
+  ]
+}

@@ -1,0 +1,8 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400'>
+  <rect width='400' height='400' fill='#1C1C1C'/>
+  <rect x='0' y='150' width='400' height='100' fill='#444'/>
+  <rect x='60' y='60' width='80' height='100' fill='#F97316' opacity='0.6'/>
+  <rect x='160' y='100' width='80' height='100' fill='#F97316' opacity='0.5'/>
+  <rect x='260' y='80' width='80' height='100' fill='#F97316' opacity='0.7'/>
+  <text x='200' y='210' text-anchor='middle' fill='#F97316' font-size='14' font-family='Inter' opacity='0.5'>Los Sauces</text>
+</svg>
