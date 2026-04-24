@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="../src/assets/css/components.css">
   <link rel="stylesheet" href="../src/assets/css/animations.css">
   <link rel="stylesheet" href="../src/assets/css/premium-design.css">
+  <link rel="stylesheet" href="../src/assets/css/dark-mode.css">
   <style>
     :root {
       --color-bg: #FAFAFA;
@@ -45,21 +46,45 @@
 </head>
 <body class="bg-[var(--color-bg)] text-[var(--color-text)]">
 
-  <!-- Header -->
-  <header class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex items-center justify-between border-b border-[var(--color-border)]">
-    <div class="text-2xl font-bold tracking-tight text-[var(--color-text)]">
-      <!-- REEMPLAZAR_LOGO -->ARQUITECT<span class="text-[var(--color-accent)]">.</span>
+  <!-- Header Premium -->
+  <header class="header-premium sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="logo-container flex items-center gap-3">
+        <div class="logo-icon">
+          <span class="text-3xl font-bold tracking-tight text-[var(--color-text)] dark:text-white">
+            <!-- REEMPLAZAR_LOGO -->ARQUITECT<span class="text-[var(--color-accent)]">.</span>
+          </span>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="hidden md:flex gap-8 items-center" aria-label="Navegación principal" role="navigation">
+        <a href="#" class="nav-link active" aria-current="page">Proyectos</a>
+        <a href="#" class="nav-link">Estudio</a>
+        <a href="#" class="nav-link">Contacto</a>
+      </nav>
+
+      <!-- Right Section - Theme Toggle + Mobile Menu -->
+      <div class="flex items-center gap-4">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar tema" title="Modo oscuro">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12a9 9 0 11-18 0 9 9 0 0118 0m0 0v-2.25m-6.364.386l1.591 1.591M12 21v-2.25m-6.364-.386l1.591-1.591M5.25 12a6.75 6.75 0 11-13.5 0 6.75 6.75 0 0113.5 0z" />
+          </svg>
+          <svg class="moon-icon hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118.77 19.773 9.75 9.75 0 106.63 6.226a9.73 9.73 0 013.982-4.226m0 0A9.75 9.75 0 1021.75 12a9.764 9.764 0 00-3.998-2.748z" />
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden text-[var(--color-text)] dark:text-white hover:text-[var(--color-accent)] transition" aria-label="Menú móvil">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
     </div>
-    <nav class="hidden md:flex gap-8 text-sm font-medium" aria-label="Navegación principal" role="navigation">
-      <a href="#" class="text-[var(--color-accent)] border-b-2 border-[var(--color-accent)] pb-1" aria-current="page">Proyectos</a>
-      <a href="#" class="text-[var(--color-text)] hover:text-[var(--color-accent)] transition">Estudio</a>
-      <a href="#" class="text-[var(--color-text)] hover:text-[var(--color-accent)] transition">Contacto</a>
-    </nav>
-    <button class="md:hidden text-[var(--color-text)] hover:text-[var(--color-accent)] transition" aria-label="Menú móvil">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-      </svg>
-    </button>
   </header>
 
   <!-- Breadcrumbs -->
@@ -465,6 +490,9 @@
   <script src="../src/assets/js/modules/enhanced-tilt.js"></script>
   <script src="../src/assets/js/modules/scroll-animations.js"></script>
   <script src="../src/assets/js/modules/reveal-text.js"></script>
+
+  <!-- Dark Mode Manager -->
+  <script src="../src/assets/js/modules/dark-mode.js"></script>
 
   <!-- Main Application -->
   <script src="../src/assets/js/modules/main.js"></script>
