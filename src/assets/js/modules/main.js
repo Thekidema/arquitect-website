@@ -13,6 +13,23 @@ function initializeApp() {
   initWhatsAppIntegration();
   initCounters();
   setupEventListeners();
+  initPremiumEffects();
+}
+
+function initPremiumEffects() {
+  // Premium effects are loaded via script tags in index.html
+  // This function can be extended for manual initialization if needed
+
+  // Log initialization of premium features
+  if (window.particleSystem) {
+    console.log('✓ Particle system initialized');
+  }
+  if (window.scrollAnimations) {
+    console.log('✓ Scroll animations initialized');
+  }
+  if (window.scrollReveal) {
+    console.log('✓ Scroll reveal system initialized');
+  }
 }
 
 function initCarousel() {
